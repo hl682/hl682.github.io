@@ -23,7 +23,7 @@ repository               : "academicpages/academicpages.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "haomin's profile.jpg"
   name             : "Haomin LUO"
   pronouns         : "she/her" # example: "she/her"  
   bio              : "PhD in Engineering"
