@@ -6,7 +6,6 @@ redirect_from:
   - /about/
   - /about.html
 ---
-
 ## Hi, I'm Haomin LUO 👋
 
 I am a PhD student in the [Energy Efficient Cities initiative (EECi)](https://www.eeci.cam.ac.uk/) at the **University of Cambridge**, affiliated with the [Alan Turing Institute](https://www.turing.ac.uk/).
@@ -22,11 +21,11 @@ My research focuses on developing **single/multi-agent deep reinforcement learni
 
 ## Education
 
-| Degree | Institution | Year |
-|--------|-------------|------|
-| **PhD** in Energy Engineering | University of Cambridge | 2024 - 2028 |
-| **MSc** in Smart Building Technology | HKUST | 2022 - 2024 |
-| **BEng** in Civil Engineering | Southwest Jiaotong University | 2016 - 2020 |
+- **PhD in Engineering**, University of Cambridge, 2024 - 2028
+
+- **MSc in Intelligent Technology and Management**, Hong Kong University of Science and Technology, 2022 - 2024
+
+- **BEng in Engineering**, Southwest Jiaotong University, 2016 - 2020
 
 ## Contact
 
