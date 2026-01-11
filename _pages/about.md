@@ -28,13 +28,13 @@ Beyond academia, I am a part-time fashion model and a photographer for the [**Ca
 
 Based on First Year report, will be put on arXiv for Publication Later, Oct 2024 - Aug 2025
 
-##### **Research Background & Motivation**
+#### **Research Background & Motivation**
 
 * **Context:** Conducted at the **Energy Efficient Cities initiative (EECi), University of Cambridge**, addressing the global need for scalable control systems in residential microgrids equipped with Photovoltaics (PV) and Battery Energy Storage Systems (BESS).
 * **Core Challenge:** Tackled the "trilemma" of **performance, privacy, and scalability** in energy management. **Traditional centralized controls (like CTDE) face "curse of dimensionality" and privacy bottlenecks, while fully decentralized methods (DTDE) often lack coordination stability**.
 * **Objective:** To design a privacy-preserving, scalable control architecture that balances individual cost savings with collective grid stability (e.g., reducing ramping and peak loads).
 
-##### **Technical Architecture & Methodology**
+#### **Technical Architecture & Methodology**
 
 * **Simulation Environment:** Developed a high-fidelity co-simulation using  a gym environment: CityLearn  (Gymnasium interface), modeling a community of 17 Zero Net Energy (ZNE) buildings in Fontana, California, using real-world weather and load data.
 * **Algorithmic Framework:** Implemented and rigorously benchmarked a comprehensive suite of control paradigms:
@@ -43,7 +43,7 @@ Based on First Year report, will be put on arXiv for Publication Later, Oct 2024
   * **Hybrid Innovation:** Proposed and validated  **GTDE (Grouped Training with Decentralised Execution)** , a novel architecture utilizing **adaptive, sparse communication protocols**
 * **Mechanism Design:** The GTDE agent learns a dynamic communication graph to exchange "state-temporal abstractions" (via GRU encoders) only with relevant peers, replacing the need for global state sharing.
 
-##### **Key Contributions & Results**
+#### **Key Contributions & Results**
 
 * **Scalability Verdict:** Proved that centralized architectures (SARL/CTDE) are non-scalable; SARL experienced "catastrophic learning failure" and CTDE performance degraded by **19%** when scaling from 4 to 14 buildings.
 * **The "Price of Anarchy":** Demonstrated that while fully decentralized agents (DTDE) achieved optimal costs (10% improvement) via price signals, they caused grid instability and high ramping rates due to lack of coordination.
