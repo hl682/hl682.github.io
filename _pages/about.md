@@ -50,7 +50,7 @@ Based on First Year report, will be put on arXiv for Publication Later, Oct 2024
 * **Superiority of GTDE:** The proposed GTDE framework emerged as the optimal solution, achieving a **43% reduction in community electricity costs** and a  **25% reduction in grid ramping** **, significantly outperforming both centralized and independent benchmarks**.
 * **Communication Analysis:** Empirically invalidated naive communication methods (FDM family), showing that "poorly designed communication protocols are more detrimental than no communication," leading to a **338% increase in grid ramping** in some cases.
 
-#### [NeuroIPS Citylearn Challenge 2022](https://www.aicrowd.com/challenges/neurips-2022-citylearn-challenge) & [2023](https://neurips.cc/virtual/2023/competition/66590) 
+#### [NeuroIPS Citylearn Challenge 2022](https://www.aicrowd.com/challenges/neurips-2022-citylearn-challenge) & [2023](https://neurips.cc/virtual/2023/competition/66590)
 
 *Project Leader in Great Smart Cities Institute., HKUST., Supervised by Prof. Zhe (Walter) WANG, Sep 2022 - Jun 2024*
 
@@ -77,41 +77,37 @@ Based on First Year report, will be put on arXiv for Publication Later, Oct 2024
 
 ## Professional Experience
 
-#### 华泰证券有限公司 TMT科技电子组 2022.10 – 2023.2
+#### **Huatai Securities Co., Ltd.** | *TMT & Electronics Group*
 
-产业链跟踪：关注中美、港股科技行业（芯片面板、消费电子）巨头，重点追踪特斯拉、比亚迪、蔚小理等新能源整车
+*Equity Research Intern  | Oct 2022 – Feb 2023*
 
-深度报告：独立撰写车载光学行业龙头联创电子（002036.SZ）的首次覆盖报告、协助撰写港股京东方精电（0710.HK）英文报告、智能驾驶座舱（摄像头、屏幕、激光雷达、芯片）及月度智能驾驶报告（无人驾驶、动力电池）5 篇
+* **Industry Tracking:** Monitored US and HK tech sectors, focusing on semiconductors, display panels, and consumer electronics. Tracked key EV players including  **Tesla** ,  **BYD** , and the "Wei-Xiao-Li" trio ( **NIO, XPeng, Li Auto** ).
+* **In-Depth Research:** Initiated coverage on **Lianchuang Electronic (002036.SZ)** with a comprehensive investment report. Co-authored an English report for  **BOE Varitronix (0710.HK)** . Produced 5 thematic reports covering smart cockpits (LiDAR, chips) and monthly trends in autonomous driving and power batteries.
 
+#### **Soochow Securities** | *Real Estate & Construction Group (New Fortune Top-Ranked Team)*
 
-#### 东吴证券有限公司居住产业组（新财富） 2022.4 – 2022.9
+*Equity Research Intern  | Apr 2022 – Sep 2022*
 
-产业链跟踪：在全国地产信用风险失控的大背景下，持续跟踪中央、地方放松政策，关注水泥、玻璃等大宗建材价格及产能变动，对二级市场 315 家上市公司的竞争格局、供需、库存、周转进行整理分析形成投资逻辑
+* **Market Analysis:** Analyzed investment logic for **315 listed companies** by evaluating competitive landscapes, supply/demand dynamics, and inventory turnover amidst real estate credit volatility. Closely monitored policy easing and commodity prices (cement, glass).
+* **Financial Modeling:** Maintained proprietary databases using  **Wind** ; updated high-frequency data including government bonds, construction contracts, and energy spreads. Assisted in building valuation/earnings models and published  **20+ weekly/monthly analysis reports** .
+* **Thematic Research:** Conducted **equity penetration analysis** on land-acquiring firms to assess financial exposure. Performed sensitivity analysis on land prices and calculated comprehensive financing costs for **114 developers** (e.g., Poly Development, 600048.SH).
+* **Coverage Initiation:** Expanded team coverage to the home appliance sector; authored a **10,000-word initiation report** on the integrated stove leader  **Yitian Smart (300911.SZ)** .
 
-数据库维护：利用 Wind 等终端定期更新地方政府新增债（地产）、新签合同额（建筑）、光伏玻璃纯碱能源价差（建材）等行业上下游数据，协助搭建重点公司盈利预测与行业估值模型，产出 20+周（月）度分析报告
+#### **AECOM** | *Global Delivery Center / Infrastructure*
 
-地产课题：通过对拿地企业进行股权穿透，搜集分析地块权益比例、投销比、计容建面等财务数据进行地价敏感性分析，详细研究市场库存、去化周期完成对保利发展（600048.SH）等 114 家地产公司近 5 年的综合融资成本统计
+***Assistant Engineer (Full-time)** | **Mar 2020 – Mar 2023 Served Fortune 500 clients (NYSE: ACM) on infrastructure projects in Hong Kong and Australia.*
 
-新股报告：拓宽团队细分赛道标的，独立撰写家电行业集成灶龙头公司亿田智能 (300911.SZ)万字深度报告初稿
+* **Investment Consulting:** Focused on **TOD (Transit-Oriented Development)** and  **PPP models** . Designed profit models and strategic plans to assist government bodies and MTR Corp in establishing **"Rail + Property"** value capture mechanisms.
+* **Sustainable Design:** Managed smart infrastructure projects (architecture/transportation). Provided **LEED** and  **ESG consulting** , conducting lifecycle energy consumption and carbon footprint analysis.
+* **Digital Transformation:** Leveraged **BIM, Big Data, and Cloud Computing** to enhance project visualization and information management. Managed costs and cash flows to ensure project **IRR** and net profit margins reached  **10-20%** .
+* **Key Projects:** Awarded **"Most Valuable Player"** for the **Sydney Gateway** project. Participated in the **New Zealand City Rail Link** and **Singapore Mandai Safari Park** projects.
 
+##### **Meritco Services** | *Hard Tech Practice*
 
-#### AECOM Consulting（艾奕康咨询）助理工程师（全职）2020.3 – 2022.3
+***Part-Time Assistant (PTA)** | Jun 2018 – Sep 2018*
 
-负责财富 500 强美股龙头公司 (NYSE:ACM)在香港、澳洲地区的基础设施建设项目工作时长：2 年
-
-投资研究：聚焦 PPP 公私合营与 TOD 地产开发相结合的轨道交通市场化投融资模式，通过宏观战略规划、盈利模型设计，预期效益分析，协助政府与 MTR 等地铁公司建立以轨道 RAIL+物业 PROPERTY 为核心的利益循环机制
-
-可持续设计：在全球交付中心（GDC），负责香港、澳大利亚等地区建筑、交通等城市基础设施的智能化设计与运维，提供可持续发展及绿色建筑（LEED）咨询服务，包括全寿命周期能耗和碳足迹分析（ESG）、可再生能源方案设计等项目管理：以三维信息数据为基础，应用大数据、BIM 与云计算技术，协助建筑企业提高基于云端可视化平台的信息化管理水平，进行数字化转型；整合项目成本、造价、现金流排布等数据保证 IRR、项目净利率等指标达到 10 - 20%
-
-参与项目：获得澳大利亚 Sydney Gateway 项目 MVP，参与新西兰 City Rail Link、新加坡 Mandai Safari Park 等
-
-
-##### 久谦管理咨询有限公司硬科技组（PTA） 2018.6 – 2018.9
-
-行业研究：协助项目经理服务 PE/VC 等投资机构对新能源汽车电池、AI 图像处理芯片、云计算数据中心等前沿科技行业的投资咨询；根据前期调研完成量化信息源的方法论设计，结合案头研究定制 10+篇专家访谈提纲
-
-深度报告：结构化整理 80h+访谈纪要，经数据清洗核验后运用波特五力模型、SWOT 等分析法产出 5 份投资报告
-
+* **Due Diligence:** Assisted PE/VC clients with investment consulting in frontier tech sectors, including  **EV batteries, AI chips, and Cloud Data Centers** . Designed quantitative research methodologies and customized interview outlines for  **10+ industry experts** .
+* **Data Analysis:** Synthesized **80+ hours** of expert interview transcripts. Conducted data cleaning and utilized **Porter’s Five Forces** and **SWOT analysis** to deliver  **5 comprehensive investment reports** .
 
 ## Patents & Awards
 
