@@ -26,15 +26,15 @@ Beyond academia, I am a part-time fashion model and a photographer for the [**Ca
 
 ### **From Centralization to Intelligent Cooperation: A Scalability Analysis of Multi-Agent Reinforcement Learning (MARL) Paradigms for Decentralized Microgrid Energy Management**
 
-Based on First Year report, will be put on arXiv for Publication Later, Oct 2024 - Aug 2025
+*Based on First Year report, will be put on arXiv for Publication Later, Oct 2024 - Aug 2025*
 
-#### **Research Background & Motivation**
+**Research Background & Motivation**
 
 * **Context:** Conducted at the **Energy Efficient Cities initiative (EECi), University of Cambridge**, addressing the global need for scalable control systems in residential microgrids equipped with Photovoltaics (PV) and Battery Energy Storage Systems (BESS).
 * **Core Challenge:** Tackled the "trilemma" of **performance, privacy, and scalability** in energy management. **Traditional centralized controls (like CTDE) face "curse of dimensionality" and privacy bottlenecks, while fully decentralized methods (DTDE) often lack coordination stability**.
 * **Objective:** To design a privacy-preserving, scalable control architecture that balances individual cost savings with collective grid stability (e.g., reducing ramping and peak loads).
 
-#### **Technical Architecture & Methodology**
+**Technical Architecture & Methodology**
 
 * **Simulation Environment:** Developed a high-fidelity co-simulation using  a gym environment: CityLearn  (Gymnasium interface), modeling a community of 17 Zero Net Energy (ZNE) buildings in Fontana, California, using real-world weather and load data.
 * **Algorithmic Framework:** Implemented and rigorously benchmarked a comprehensive suite of control paradigms:
@@ -43,7 +43,7 @@ Based on First Year report, will be put on arXiv for Publication Later, Oct 2024
   * **Hybrid Innovation:** Proposed and validated  **GTDE (Grouped Training with Decentralised Execution)** , a novel architecture utilizing **adaptive, sparse communication protocols**
 * **Mechanism Design:** The GTDE agent learns a dynamic communication graph to exchange "state-temporal abstractions" (via GRU encoders) only with relevant peers, replacing the need for global state sharing.
 
-#### **Key Contributions & Results**
+**Key Contributions & Results**
 
 * **Scalability Verdict:** Proved that centralized architectures (SARL/CTDE) are non-scalable; SARL experienced "catastrophic learning failure" and CTDE performance degraded by **19%** when scaling from 4 to 14 buildings.
 * **The "Price of Anarchy":** Demonstrated that while fully decentralized agents (DTDE) achieved optimal costs (10% improvement) via price signals, they caused grid instability and high ramping rates due to lack of coordination.
@@ -79,14 +79,14 @@ Based on First Year report, will be put on arXiv for Publication Later, Oct 2024
 
 ### **Huatai Securities Co., Ltd.** | *TMT & Electronics Group*
 
-*Equity Research Intern  | Oct 2022 – Feb 2023*
+*Equity Research Intern, Oct 2022 – Feb 2023*
 
 * **Industry Tracking:** Monitored US and HK tech sectors, focusing on semiconductors, display panels, and consumer electronics. Tracked key EV players including  **Tesla** ,  **BYD** , and the "Wei-Xiao-Li" trio ( **NIO, XPeng, Li Auto** ).
 * **In-Depth Research:** Initiated coverage on **Lianchuang Electronic (002036.SZ)** with a comprehensive investment report. Co-authored an English report for  **BOE Varitronix (0710.HK)** . Produced 5 thematic reports covering smart cockpits (LiDAR, chips) and monthly trends in autonomous driving and power batteries.
 
 ### **Soochow Securities** | *Real Estate & Construction Group (New Fortune Top-Ranked Team)*
 
-*Equity Research Intern  | Apr 2022 – Sep 2022*
+*Equity Research Intern, Jun 2022 – Sep 2022*
 
 * **Market Analysis:** Analyzed investment logic for **315 listed companies** by evaluating competitive landscapes, supply/demand dynamics, and inventory turnover amidst real estate credit volatility. Closely monitored policy easing and commodity prices (cement, glass).
 * **Financial Modeling:** Maintained proprietary databases using  **Wind** ; updated high-frequency data including government bonds, construction contracts, and energy spreads. Assisted in building valuation/earnings models and published  **20+ weekly/monthly analysis reports** .
@@ -95,7 +95,7 @@ Based on First Year report, will be put on arXiv for Publication Later, Oct 2024
 
 ### **AECOM** | *Global Delivery Center / Infrastructure*
 
-**Assistant Engineer (Full-time)** | *Mar 2020 – Mar 2023 Served Fortune 500 clients (NYSE: ACM) on infrastructure projects in Hong Kong and Australia.*
+Assistant Engineer (Full-time), *Mar 2020 – Mar 2023*
 
 * **Investment Consulting:** Focused on **TOD (Transit-Oriented Development)** and  **PPP models** . Designed profit models and strategic plans to assist government bodies and MTR Corp in establishing **"Rail + Property"** value capture mechanisms.
 * **Sustainable Design:** Managed smart infrastructure projects (architecture/transportation). Provided **LEED** and  **ESG consulting** , conducting lifecycle energy consumption and carbon footprint analysis.
