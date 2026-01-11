@@ -111,23 +111,15 @@ Based on First Year report, will be put on arXiv for Publication Later, Oct 2024
 
 ## Patents & Awards
 
-Haomin, LUO., A UVC Purifier for Improving IAQ in Building Environment. Patent Application Number: ZL 2013 3 0320199.2
-
-Haomin, LUO., Indoor Air Purification Device. Patent Application Number: ZL 2013 2 0094064.3 (Authorized)
-
-03/2024 MSc Excellent Student Scholarship (Top 5%)
-
-11/2023 2nd Place in the 2023 NeurIPS CityLearn Challenge (Top 2)
-
-05/2021 Most Valued Player in Sydney Gateway Project of AECOM (Top 1)
-
-12/2018 Mingcheng Scholarship of Southwest Jiaotong University (Top 10%)
-
-06/2018 2017-2018 Outstanding Individual of Southwest Jiaotong University (Top 5%)
-
-04/2018 6th Place in 2018 ASCE Mid-Pacific Student Conference Concrete Canoe Competition (International Award)
-
-03/2017 4th Place in the 2017 ASCE Southeast Student Conference Steel Bridge Competition (International Award)
+* Haomin, LUO., A UVC Purifier for Improving IAQ in Building Environment. Patent Application Number: ZL 2013 3 0320199.2
+* Haomin, LUO., Indoor Air Purification Device. Patent Application Number: ZL 2013 2 0094064.3 (Authorized)
+* 03/2024 MSc Excellent Student Scholarship (Top 5%)
+* 11/2023 2nd Place in the 2023 NeurIPS CityLearn Challenge (Top 2)
+* 05/2021 Most Valued Player in Sydney Gateway Project of AECOM (Top 1)
+* 12/2018 Mingcheng Scholarship of Southwest Jiaotong University (Top 10%)
+* 06/2018 2017-2018 Outstanding Individual of Southwest Jiaotong University (Top 5%)
+* 04/2018 6th Place in 2018 ASCE Mid-Pacific Student Conference Concrete Canoe Competition (International Award)
+* 03/2017 4th Place in the 2017 ASCE Southeast Student Conference Steel Bridge Competition (International Award)
 
 ## Cotact
 
