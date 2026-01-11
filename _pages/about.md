@@ -61,7 +61,7 @@ Based on First Year report, will be put on arXiv for Publication Later, Oct 2024
 
 ### [Computational fluid dynamics (CFD) Simulation of Wind Tunnel Tests for High-rise Buildings &amp; Large-Span Bridges](https://yapimerkezi.com.tr/En/News/1915-Canakkale-Bridge-passed-the-wind-test-in-China)
 
-*Research Assistant in XNJD-3 Lab (world's largest atmospheric boundary layer wind tunnel)., Supervised by Prof. Shixiong Zheng*
+*Research Assistant in XNJD-3 Lab (world's largest atmospheric boundary layer wind tunnel)., Supervised by Prof. Shixiong Zheng, Apr 2018 – Jun 2019*
 
 * Participated in the CFD simulation of the wind resistance tests of high-rise buildings & large-span bridges under different wind directions & speeds, and the wind-induced catastrophe research of urban infrastructures in wind tunnel
 * Responsible for the finite element analysis of buildings’ aeroelastic models under specific scale ratios and the simulation of the turbulent flow field in the aerodynamic experiment, to solve wind vibration problems such as flutter, galloping and buffeting.
@@ -69,7 +69,7 @@ Based on First Year report, will be put on arXiv for Publication Later, Oct 2024
 
 ### [Green Building Design and Energy Simulation for Chengdu International Airport Terminals](https://www.yuandacn.com/index.php/en/projects-cn-2/123-domestic/sichuan/473-chengdu-tianfu-international-airport-terminal-2.html)
 
-*Research Assistant in China State Construction Engineering Corporation (CSCEC) of the Chengdu International Airport project*
+*Research Assistant in China State Construction Engineering Corporation (CSCEC) of the Chengdu International Airport project, Jun 2017 – Sep 2017*
 
 * Committed to enhancing the environmental sustainability of airport terminals while simultaneously reducing their operational costs. throughout the entirety of the project's design and construction process, responsible for examining the overall energy consumption and carbon footprint of the T1 terminal (1.26 km²) and provide renewable energy feasibility solutions
 * Conducting microclimate analysis of the site and used EnergyPlus to analyze energy consumption; through glare analysis of building facades, indoor thermal comfort analysis, and indoor lighting environment analysis, we used Ecotect, Fuzor and Sketchup to simulate the building's layout, ventilation, light intensity and calculated its best orientation
