@@ -14,7 +14,7 @@ My research centers on  **Reinforcement Learning (RL)** , specifically  **Multi-
 
 Prior to Cambridge, I earned my MSc in Intelligent Technology and Management from **[Hong Kong University of Science and Technology](https://hkust.edu.hk/)** (GPA 3.96/4.0), supervised by **[Prof. Zhe (Walter) Wang](https://walterzwang.github.io/)**, where I received the Msc Excellent Student Scholarship. My professional background spans both engineering and finance; I worked as an engineer at **[AECOM](https://aecom.com/)** (2021–2022), earning the "Most Valuable Player" award, also served as a TMT equity analyst at **[Soochow Securities](https://www.dwzq.com.hk/Default.asp?langcode=en)** and  [**Huatai Securities**](https://www.htsc.com.cn/en/) and a consultant for **[Meritco Services](https://www.linkedin.com/company/meritco-services/posts/?feedView=all)**. I hold a B.Eng. in Civil Engineering from [**Southwest Jiaotong University**](https://en.swjtu.edu.cn/index.jsp), where I was awarded with Mingcheng Scholarship and outstanding Individual.
 
-Beyond academia, I am a part-time fashion model and a photographer for the [**Cambridge University Charity Fashion Show (CUCFS)**](https://cucfs.co.uk/). An avid rower, I represent the  **[Lady Margaret Boat Club (LMBC)](https://www.ladymargaretboatclub.org/)** —having competed in the Lent/May Bumps and HORR—and serve as Vice President of the [**Cambridge Chinese Rower Network**](https://www.cambridgesu.co.uk/organisation/23438/). I also sit on the Executive Committee for the Entrepreneurship Department of the **[Chinese Students and Scholar Association in Cambridge(CSSA)](https://cssacam.org/)**. Additionally, I am a classically trained violinist with 20 years of experience, performing regularly in termly concerts with the **[Central Colleges Orchestra (CCO](https://www.cmp.cam.ac.uk/opportunities/entry/central-colleges-orchestra-cco/))**, [**King’s (KCMS)**](https://kcmsofficial.wordpress.com/) and **[Jesus’s (JCMS)](https://jcms.jesus.cam.ac.uk/)** College Music Societies.
+Beyond academia, I am a part-time fashion model and a photographer for the [**Cambridge University Charity Fashion Show (CUCFS)**](https://cucfs.co.uk/). An avid rower, I represent the  **[Lady Margaret Boat Club (LMBC)](https://www.ladymargaretboatclub.org/)** —having competed in the Lent/May Bumps and HORR—and serve as Vice President of the [**Cambridge Chinese Rower Network**](https://www.cambridgesu.co.uk/organisation/23438/)(CCRN). I also sit on the Executive Committee for the Entrepreneurship Department of the **[Chinese Students and Scholar Association in Cambridge(CSSA)](https://cssacam.org/)**. Additionally, I am a classically trained violinist with 20 years of experience, performing regularly in termly concerts with the **[Central Colleges Orchestra (CCO](https://www.cmp.cam.ac.uk/opportunities/entry/central-colleges-orchestra-cco/))**, [**King’s (KCMS)**](https://kcmsofficial.wordpress.com/) and **[Jesus’s (JCMS)](https://jcms.jesus.cam.ac.uk/)** College Music Societies.
 
 ## Education
 
@@ -24,7 +24,7 @@ Beyond academia, I am a part-time fashion model and a photographer for the [**Ca
 
 ## Research Experience
 
-#### **From Centralization to Intelligent Cooperation: A Scalability Analysis of Multi-Agent Reinforcement Learning (MARL) Paradigms for Decentralized Microgrid Energy Management**
+### **From Centralization to Intelligent Cooperation: A Scalability Analysis of Multi-Agent Reinforcement Learning (MARL) Paradigms for Decentralized Microgrid Energy Management**
 
 Based on First Year report, will be put on arXiv for Publication Later, Oct 2024 - Aug 2025
 
@@ -50,7 +50,7 @@ Based on First Year report, will be put on arXiv for Publication Later, Oct 2024
 * **Superiority of GTDE:** The proposed GTDE framework emerged as the optimal solution, achieving a **43% reduction in community electricity costs** and a  **25% reduction in grid ramping** **, significantly outperforming both centralized and independent benchmarks**.
 * **Communication Analysis:** Empirically invalidated naive communication methods (FDM family), showing that "poorly designed communication protocols are more detrimental than no communication," leading to a **338% increase in grid ramping** in some cases.
 
-#### [NeuroIPS Citylearn Challenge 2022](https://www.aicrowd.com/challenges/neurips-2022-citylearn-challenge) & [2023](https://neurips.cc/virtual/2023/competition/66590)
+### [NeuroIPS Citylearn Challenge 2022](https://www.aicrowd.com/challenges/neurips-2022-citylearn-challenge) & [2023](https://neurips.cc/virtual/2023/competition/66590)
 
 *Project Leader in Great Smart Cities Institute., HKUST., Supervised by Prof. Zhe (Walter) WANG, Sep 2022 - Jun 2024*
 
@@ -59,7 +59,7 @@ Based on First Year report, will be put on arXiv for Publication Later, Oct 2024
 * Trained multiple advanced deep reinforcement learning control algorithms (DDPG, SAC, PPO ,TD3) to manage the battery charging/discharging behavior, made the final result perfoms 13% better than the baseline
 * Designed several corresponding KPIs (e.g. Average daily peak, Ramping, Zero net energy, Carbon emissionsd, etc.,) for the comparative study between different algorithms at the level of single building-level and grid-level, respectively, and it was found that the TD3 algorithm had the best overall performance, and was ahead of the DDPG by 3%-27% in proposed KPIs
 
-#### [Computational fluid dynamics (CFD) Simulation of Wind Tunnel Tests for High-rise Buildings &amp; Large-Span Bridges](https://yapimerkezi.com.tr/En/News/1915-Canakkale-Bridge-passed-the-wind-test-in-China)
+### [Computational fluid dynamics (CFD) Simulation of Wind Tunnel Tests for High-rise Buildings &amp; Large-Span Bridges](https://yapimerkezi.com.tr/En/News/1915-Canakkale-Bridge-passed-the-wind-test-in-China)
 
 *Research Assistant in XNJD-3 Lab (world's largest atmospheric boundary layer wind tunnel)., Supervised by Prof. Shixiong Zheng*
 
@@ -67,7 +67,7 @@ Based on First Year report, will be put on arXiv for Publication Later, Oct 2024
 * Responsible for the finite element analysis of buildings’ aeroelastic models under specific scale ratios and the simulation of the turbulent flow field in the aerodynamic experiment, to solve wind vibration problems such as flutter, galloping and buffeting.
 * Successfully completed the wind tunnel test of the 1915 Turkish Çanakkale Bridge (world's longest bridge) within four months; Other projects including Shanghai Lujiazui Financial Trade Zone skyscraper cluster and Hålogaland Bridge in Norway
 
-#### [Green Building Design and Energy Simulation for Chengdu International Airport Terminals](https://www.yuandacn.com/index.php/en/projects-cn-2/123-domestic/sichuan/473-chengdu-tianfu-international-airport-terminal-2.html)
+### [Green Building Design and Energy Simulation for Chengdu International Airport Terminals](https://www.yuandacn.com/index.php/en/projects-cn-2/123-domestic/sichuan/473-chengdu-tianfu-international-airport-terminal-2.html)
 
 *Research Assistant in China State Construction Engineering Corporation (CSCEC) of the Chengdu International Airport project*
 
@@ -77,14 +77,14 @@ Based on First Year report, will be put on arXiv for Publication Later, Oct 2024
 
 ## Professional Experience
 
-#### **Huatai Securities Co., Ltd.** | *TMT & Electronics Group*
+### **Huatai Securities Co., Ltd.** | *TMT & Electronics Group*
 
 *Equity Research Intern  | Oct 2022 – Feb 2023*
 
 * **Industry Tracking:** Monitored US and HK tech sectors, focusing on semiconductors, display panels, and consumer electronics. Tracked key EV players including  **Tesla** ,  **BYD** , and the "Wei-Xiao-Li" trio ( **NIO, XPeng, Li Auto** ).
 * **In-Depth Research:** Initiated coverage on **Lianchuang Electronic (002036.SZ)** with a comprehensive investment report. Co-authored an English report for  **BOE Varitronix (0710.HK)** . Produced 5 thematic reports covering smart cockpits (LiDAR, chips) and monthly trends in autonomous driving and power batteries.
 
-#### **Soochow Securities** | *Real Estate & Construction Group (New Fortune Top-Ranked Team)*
+### **Soochow Securities** | *Real Estate & Construction Group (New Fortune Top-Ranked Team)*
 
 *Equity Research Intern  | Apr 2022 – Sep 2022*
 
@@ -93,16 +93,16 @@ Based on First Year report, will be put on arXiv for Publication Later, Oct 2024
 * **Thematic Research:** Conducted **equity penetration analysis** on land-acquiring firms to assess financial exposure. Performed sensitivity analysis on land prices and calculated comprehensive financing costs for **114 developers** (e.g., Poly Development, 600048.SH).
 * **Coverage Initiation:** Expanded team coverage to the home appliance sector; authored a **10,000-word initiation report** on the integrated stove leader  **Yitian Smart (300911.SZ)** .
 
-#### **AECOM** | *Global Delivery Center / Infrastructure*
+### **AECOM** | *Global Delivery Center / Infrastructure*
 
-***Assistant Engineer (Full-time)** | **Mar 2020 – Mar 2023 Served Fortune 500 clients (NYSE: ACM) on infrastructure projects in Hong Kong and Australia.*
+**Assistant Engineer (Full-time)** | *Mar 2020 – Mar 2023 Served Fortune 500 clients (NYSE: ACM) on infrastructure projects in Hong Kong and Australia.*
 
 * **Investment Consulting:** Focused on **TOD (Transit-Oriented Development)** and  **PPP models** . Designed profit models and strategic plans to assist government bodies and MTR Corp in establishing **"Rail + Property"** value capture mechanisms.
 * **Sustainable Design:** Managed smart infrastructure projects (architecture/transportation). Provided **LEED** and  **ESG consulting** , conducting lifecycle energy consumption and carbon footprint analysis.
 * **Digital Transformation:** Leveraged **BIM, Big Data, and Cloud Computing** to enhance project visualization and information management. Managed costs and cash flows to ensure project **IRR** and net profit margins reached  **10-20%** .
 * **Key Projects:** Awarded **"Most Valuable Player"** for the **Sydney Gateway** project. Participated in the **New Zealand City Rail Link** and **Singapore Mandai Safari Park** projects.
 
-##### **Meritco Services** | *Hard Tech Practice*
+### **Meritco Services** | *Hard Tech Practice*
 
 ***Part-Time Assistant (PTA)** | Jun 2018 – Sep 2018*
 

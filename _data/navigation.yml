@@ -4,11 +4,11 @@ main:
   - title: "About Me"
     url: /
 
-  - title: "Academic"
-    url: /academic/
+  # - title: "Academic"
+  #   url: /academic/
 
-  - title: "Experience"
-    url: /experience/
+  # - title: "Industry"
+  #   url: /Industry/
 
-  - title: "Hobbies"
-    url: /hobbies/
+  # - title: "Hobbies"
+  #   url: /hobbies/
