@@ -24,31 +24,15 @@ Beyond academia, I am a part-time fashion model and a photographer for the [**Ca
 
 ## Research Experience
 
-### **From Centralization to Intelligent Cooperation: A Scalability Analysis of Multi-Agent Reinforcement Learning (MARL) Paradigms for Decentralized Microgrid Energy Management**
+### From Centralization to Intelligent Cooperation: Integrating Adaptive Grouping into MADDPG for Distributed Energy Storage Coordination in Smart Microgrids
 
 *Based on First Year report, will be put on arXiv for Publication Later, Oct 2024 - Aug 2025*
 
-**Research Background & Motivation**
+The rapid proliferation of distributed photovoltaic (PV) systems and the declining costs of battery energy storage systems (BESS) are fundamentally transforming power distribution networks. As prosumers become increasingly prevalent, microgrids face unprecedented challenges in coordinating numerous distributed energy resources (DERs) to achieve grid stability, economic efficiency, and carbon reduction goals. Traditional centralized control approaches struggle to scale with the growing number of controllable assets, while purely decentralized methods fail to capture the coordination benefits essential for demand response and peak shaving applications.
 
-* **Context:** Conducted at the **Energy Efficient Cities initiative (EECi), University of Cambridge**, addressing the global need for scalable control systems in residential microgrids equipped with Photovoltaics (PV) and Battery Energy Storage Systems (BESS).
-* **Core Challenge:** Tackled the "trilemma" of **performance, privacy, and scalability** in energy management. **Traditional centralized controls (like CTDE) face "curse of dimensionality" and privacy bottlenecks, while fully decentralized methods (DTDE) often lack coordination stability**.
-* **Objective:** To design a privacy-preserving, scalable control architecture that balances individual cost savings with collective grid stability (e.g., reducing ramping and peak loads).
+Multi-Agent Reinforcement Learning (MARL) offers a promising paradigm for DER coordination, yet existing training frameworks exhibit inherent limitations: Decentralized Training with Decentralized Execution (DTDE) suffers from environment non-stationarity and lack of inter-agent coordination, while Centralized Training with Decentralized Execution (CTDE) encounters scalability bottlenecks and communication constraints as agent populations grow. To address this scalability-coordination dilemma, we innovatively integrate the concept of adaptive training into the MADDPG framework, proposing a novel algorithm—HTDE-MADDPG—that enables agents to dynamically form coordination clusters based on local observations while maintaining decentralized execution. The proposed algorithm features an adaptive grouping module employing Graph Attention Networks (GAT) for information aggregation and Gumbel-Sigmoid sampling for differentiable group formation. A unified reward function is designed with three components: local cost minimization aligned with time-of use pricing, district-level peak demand contribution with adaptive thresholds, and ramping penalties to improve power quality.
 
-**Technical Architecture & Methodology**
-
-* **Simulation Environment:** Developed a high-fidelity co-simulation using  a gym environment: CityLearn  (Gymnasium interface), modeling a community of 17 Zero Net Energy (ZNE) buildings in Fontana, California, using real-world weather and load data.
-* **Algorithmic Framework:** Implemented and rigorously benchmarked a comprehensive suite of control paradigms:
-  * **Baselines:** Rule-Based Control (RBC) and Single-Agent RL (SAC, DDPG).
-  * **MARL Benchmarks:** Centralized Training Decentralized Execution (CTDE-MADDPG) and Independent Learners (DTDE-MADDPG)
-  * **Hybrid Innovation:** Proposed and validated  **GTDE (Grouped Training with Decentralised Execution)** , a novel architecture utilizing **adaptive, sparse communication protocols**
-* **Mechanism Design:** The GTDE agent learns a dynamic communication graph to exchange "state-temporal abstractions" (via GRU encoders) only with relevant peers, replacing the need for global state sharing.
-
-**Key Contributions & Results**
-
-* **Scalability Verdict:** Proved that centralized architectures (SARL/CTDE) are non-scalable; SARL experienced "catastrophic learning failure" and CTDE performance degraded by **19%** when scaling from 4 to 14 buildings.
-* **The "Price of Anarchy":** Demonstrated that while fully decentralized agents (DTDE) achieved optimal costs (10% improvement) via price signals, they caused grid instability and high ramping rates due to lack of coordination.
-* **Superiority of GTDE:** The proposed GTDE framework emerged as the optimal solution, achieving a **43% reduction in community electricity costs** and a  **25% reduction in grid ramping** **, significantly outperforming both centralized and independent benchmarks**.
-* **Communication Analysis:** Empirically invalidated naive communication methods (FDM family), showing that "poorly designed communication protocols are more detrimental than no communication," leading to a **338% increase in grid ramping** in some cases.
+We evaluate the proposed HTDE-MADDPG against baseline (no control), DTDE-MADDPG, CTDE-MADDPG, and Model Predictive Control (MPC) bounds in the CityLearn microgrid simulation environment. Experimental results on a real-world microgrid over a 60-day horizon demonstrate that HTDE-MADDPG achieves 46.6% cost reduction, 37.0% peak demand reduction, 38.7% carbon emission reduction, and 22.3% load ramping reduction compared to the baseline—consistently outperforming both DTDE (41.7%, 28.3%, 32.3%, 7.0%) and CTDE counterparts across all metrics. Notably, the proposed algorithm exhibits faster convergence and more stable training dynamics than DTDE-MADDPG, while avoiding the communication overhead of CTDE approaches. The adaptive grouping mechanism effectively bridges the gap between scalability and coordination of MARL, offering a practical solution for large-scale DER management in future smart grids.
 
 ### [NeuroIPS Citylearn Challenge 2022](https://www.aicrowd.com/challenges/neurips-2022-citylearn-challenge) & [2023](https://neurips.cc/virtual/2023/competition/66590)
 
