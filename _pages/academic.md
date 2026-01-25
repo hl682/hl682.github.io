@@ -3,10 +3,9 @@ permalink: /academic/
 title: "Academic"
 author_profile: true
 ---
-
 ## Publications
 
-- **Luo, H.**, Wang, Z., 2024. "Deep Reinforcement Learning-based Approaches for Energy Optimization of a Zero Net Energy Community". *Advances in Applied Energy* (Forthcoming)
+- **Arxiv : Luo, H.**, Wang, Z., 2024. "Deep Reinforcement Learning-based Approaches for Energy Optimization of a Zero Net Energy Community". *Advances in Applied Energy*
 
 ## Patents
 
@@ -17,7 +16,8 @@ author_profile: true
 
 ## Research Projects
 
-### AI in Net Zero Energy Buildings and Microgrids Controls
+AI in Net Zero Energy Buildings and Microgrids Controls
+
 **Sep 2022 – Jun 2024** | HKUST Smart Building Lab | Supervisor: Prof. Zhe (Walter) Wang
 
 - Developed advanced deep reinforcement learning controllers (DDPG, SAC, PPO, TD3) for building energy management
@@ -26,6 +26,7 @@ author_profile: true
 - TD3 algorithm outperformed DDPG by **3%-27%** across proposed KPIs (Average daily peak, Ramping, Zero net energy, Carbon emissions)
 
 ### CFD Simulation of Wind Tunnel Tests for High-rise Buildings
+
 **Apr 2018 – Jun 2019** | XNJD-3 Lab (World's largest atmospheric boundary layer wind tunnel) | Supervisor: Prof. Shixiong Zheng
 
 - Conducted CFD simulations for high-rise buildings and long-span bridges under various wind conditions
@@ -36,6 +37,7 @@ author_profile: true
   - 🌁 Hålogaland Bridge, Norway
 
 ### Green Building Design for Airport Terminals
+
 **Jun 2017 – Sep 2017** | China State Construction Engineering Corporation (CSCEC)
 
 - Analyzed energy consumption and carbon footprint of Chengdu Airport T1 Terminal (1.26 km²)
@@ -46,26 +48,29 @@ author_profile: true
 
 ## Awards & Honors
 
-| Year | Award |
-|------|-------|
-| 2024 | 🏆 MSc Excellent Student Scholarship, HKUST (Top 5%) |
-| 2023 | 🥈 **2nd Place**, NeurIPS CityLearn Challenge |
-| 2021 | 🌟 Most Valued Player, Sydney Gateway Project, AECOM |
-| 2018 | 🎖️ Mingcheng Scholarship, SWJTU (Top 10%) |
-| 2018 | 🏅 6th Place, ASCE Mid-Pacific Concrete Canoe Competition |
-| 2017 | 🏅 4th Place, ASCE Southeast Steel Bridge Competition |
+| Year | Award                                                     |           |
+| ---- | --------------------------------------------------------- | --------- |
+| 2024 | 🏆 MSc Excellent Student Scholarship, HKUST               | (Top 5%)  |
+| 2023 | 🥈**2nd Place**, NeurIPS CityLearn Challenge        |           |
+| 2021 | 🌟 Most Valued Player, Sydney Gateway Project, AECOM      |           |
+| 2018 | 🎖️ Mingcheng Scholarship, SWJTU                         | (Top 10%) |
+| 2018 | 🏅 6th Place, ASCE Mid-Pacific Concrete Canoe Competition | (Top 10%) |
+| 2017 | 🏅 4th Place, ASCE Southeast Steel Bridge Competition     | (Top 10%) |
 
 ---
 
 ## Skills
 
 **Programming**
+
 - Python (PyTorch, TensorFlow, Matplotlib)
 - MATLAB, C++, OpenAI Gym
 
 **Simulation & Modeling**
+
 - EnergyPlus, TRNSYS, CFD, Simulink
 
 **Languages**
+
 - Chinese (Native)
 - English (IELTS 7.5)
