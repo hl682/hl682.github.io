@@ -1,14 +1,14 @@
 ---
-permalink: /experience/
-title: "Experience"
+permalink: /Industry/
+title: "Industry"
 author_profile: true
 ---
-
 ## Professional Experience
 
 ---
 
-### AECOM Consulting (艾奕康咨询)
+### AECOM Consulting
+
 **Assistant Engineer** | Hong Kong & Australia | Mar 2020 – Mar 2022
 
 > Fortune 500 company (NYSE: ACM) specializing in infrastructure consulting
@@ -20,13 +20,15 @@ author_profile: true
 - 📊 **Project Management**: Applied BIM and cloud computing technologies to enhance digital transformation, maintaining IRR and net profit margins at 10-20%
 
 **Notable Projects:**
+
 - 🏆 **Sydney Gateway Project** - Awarded MVP
 - 🚊 City Rail Link, New Zealand
 - 🦁 Mandai Safari Park, Singapore
 
 ---
 
-### Huatai Securities (华泰证券)
+### Huatai Securities
+
 **Research Intern - TMT Technology Group** | Oct 2022 – Feb 2023
 
 **Key Responsibilities:**
@@ -37,7 +39,8 @@ author_profile: true
 
 ---
 
-### Soochow Securities (东吴证券)
+### Soochow Securities
+
 **Research Intern - Real Estate Group** | Apr 2022 – Sep 2022
 
 **Key Responsibilities:**
@@ -49,7 +52,8 @@ author_profile: true
 
 ---
 
-### Jiuqian Consulting (久谦咨询)
+### Jiuqian Consulting
+
 **Research Intern - Hard Tech Group** | Jun 2018 – Sep 2018
 
 **Key Responsibilities:**
@@ -59,9 +63,3 @@ author_profile: true
 - 📑 **Reports**: Processed 80+ hours of interview transcripts and produced 5 investment reports using Porter's Five Forces and SWOT analysis
 
 ---
-
-## Certifications
-
-- 📜 Securities Practitioner Qualification (证券从业资格)
-- 📜 LEED AP Candidate
-- 📜 CFA Level I (Preparing)

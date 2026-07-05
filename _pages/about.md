@@ -10,23 +10,25 @@ redirect_from:
 
 I am a second-year PhD student in the **[Department of Engineering](https://www.eng.cam.ac.uk/)** at the  **[University of Cambridge](https://www.cam.ac.uk/)** ([**St. John's College**](https://www.joh.cam.ac.uk/)), supervised by **[Prof. Ruchi Choudhary](https://www.turing.ac.uk/people/researchers/ruchi-choudhary)** (affiliated with [**The Alan Turing Institute**](https://www.turing.ac.uk/)), with [**Prof. Ioannis Lestas**](https://www.eng.cam.ac.uk/profiles/icl20) serving as my advisor.
 
-My research centers on  **Reinforcement Learning (RL)** , specifically  **Multi-Agent Reinforcement Learning (MARL)**. I investigate agents' communication mechanism, collaboration structure, and overall explainability, with a focus on robustness in extreme environments and Human-in-the-Loop systems. While my previous work treated RL as a data-driven, model-free control method for power system optimization (such as microgrids and PV-battery storage) and energy trading in electricity market, my current research interests have shifted toward the fundamental mathematical principles of RL itself.
+My research centers on  **Deep Reinforcement Learning (RL)** , specifically  **Multi-Agent Reinforcement Learning (MARL)**. I investigate agents' communication mechanism, collaboration structure, and overall explainability. My prior work mainly adopted reinforcement learning as a data-driven, model-free control paradigm for time-series data, applying it to demand response scheduling in power systems including microgrids, virtual power plants (VPPs), and photovoltaic-energy storage systems.Now, my research interests lean more toward reinforcement learning applications in energy finance, especially quantitative trading within electricity markets.
 
-Prior to Cambridge, I earned my MSc in Intelligent Technology and Management from **[Hong Kong University of Science and Technology](https://hkust.edu.hk/)** (GPA 3.96/4.0), supervised by **[Prof. Zhe (Walter) Wang](https://walterzwang.github.io/)**, where I received the Msc Excellent Student Scholarship. My professional background spans both engineering and finance; I worked as an engineer at **[AECOM](https://aecom.com/)** (2021–2022), earning the "Most Valuable Player" award, also served as a TMT equity analyst at **[Soochow Securities](https://www.dwzq.com.hk/Default.asp?langcode=en)** and  [**Huatai Securities**](https://www.htsc.com.cn/en/) and a consultant for **[Meritco Services](https://www.linkedin.com/company/meritco-services/posts/?feedView=all)**. I hold a B.Eng. in Civil Engineering from [**Southwest Jiaotong University**](https://en.swjtu.edu.cn/index.jsp), where I was awarded with Mingcheng Scholarship and outstanding Individual.
+Prior to Cambridge, I earned my master degree in Intelligent Building Technology and Management from **[Hong Kong University of Science and Technology](https://hkust.edu.hk/)** (GPA 3.96/4.3), supervised by **[Prof. Zhe (Walter) Wang](https://walterzwang.github.io/)**, where I received the Excellent Student Scholarship. My professional background spans both engineering and finance; I worked as an assistant engineer at **[AECOM](https://aecom.com/)** (2021–2022), earning the "Most Valuable Player" award, also served as a TMT equity analyst at **[Soochow Securities](https://www.dwzq.com.hk/Default.asp?langcode=en)** and  [**Huatai Securities**](https://www.htsc.com.cn/en/) and a consultant for **[Meritco Services](https://www.linkedin.com/company/meritco-services/posts/?feedView=all)**. I hold a B.Eng. in Civil Engineering from [**Southwest Jiaotong University**](https://en.swjtu.edu.cn/index.jsp), where I was awarded with Mingcheng Scholarship and outstanding Individual.
 
-Beyond academia, I am a part-time fashion model and a photographer for the [**Cambridge University Charity Fashion Show (CUCFS)**](https://cucfs.co.uk/). An avid rower, I represent the  **[Lady Margaret Boat Club (LMBC)](https://www.ladymargaretboatclub.org/)** —having competed in the Lent/May Bumps and HORR—and serve as Vice President of the [**Cambridge Chinese Rower Network**](https://www.cambridgesu.co.uk/organisation/23438/)(CCRN). I also sit on the Executive Committee for the Entrepreneurship Department of the **[Chinese Students and Scholar Association in Cambridge(CSSA)](https://cssacam.org/)**. Additionally, I am a classically trained violinist with 20 years of experience, performing regularly in termly concerts with the **[Central Colleges Orchestra (CCO](https://www.cmp.cam.ac.uk/opportunities/entry/central-colleges-orchestra-cco/))**, [**King’s (KCMS)**](https://kcmsofficial.wordpress.com/) and **[Jesus’s (JCMS)](https://jcms.jesus.cam.ac.uk/)** College Music Societies.
+Beyond academia, I am a profissional fashion model，my mother agency(MA) is **[Lacoco Models Management](https://models.com/agency/lacoco-model-management/)** and a photographer for the [**Cambridge University Charity Fashion Show (CUCFS)**](https://cucfs.co.uk/). An avid rower, I represent the  **[Lady Margaret Boat Club (LMBC)](https://www.ladymargaretboatclub.org/)** —having competed in the Lent/May Bumps and HORR—and serve as Vice President of the [**Cambridge Chinese Rower Network**](https://www.cambridgesu.co.uk/organisation/23438/)(CCRN). I also sit on the Executive Committee for the Entrepreneurship Department of the **[Chinese Students and Scholar Association in Cambridge(CSSA)](https://cssacam.org/)**. Additionally, I am a classically trained violinist with 20 years of experience, performing regularly in termly concerts with the **[Central Colleges Orchestra (CCO](https://www.cmp.cam.ac.uk/opportunities/entry/central-colleges-orchestra-cco/)**, [**King’s (KCMS)**](https://kcmsofficial.wordpress.com/) and **[Jesus’s (JCMS)](https://jcms.jesus.cam.ac.uk/)** College Music Societies.
 
 ## Education
 
 * **PhD in Engineering**, University of Cambridge, Oct 2024 - present
-* **MSc in Intelligent Technology and Management**, Hong Kong University of Science and Technology, Sep 2022 - Jun 2024
+
+* **Mphil in Intelligent Building Technology and Management**, Hong Kong University of Science and Technology, Sep 2022 - Jun 2024
+
 * **BEng in Civil Engineering**, Southwest Jiaotong University, Sep 2016 - Jun2020
 
 ## Research Experience
 
 ### Integrating Adaptive Grouping into MADDPG for Distributed Energy Storage Coordination in Smart Microgrids
 
-*Based on First Year report, will be put on arXiv for Publication Later, Oct 2024 - Aug 2025*
+*Based on First Year report, will be put on arXiv for Publication Later, Oct 2024 - Jul 2026*
 
 The rapid proliferation of distributed photovoltaic (PV) systems and the declining costs of battery energy storage systems (BESS) are fundamentally transforming power distribution networks. As prosumers become increasingly prevalent, microgrids face unprecedented challenges in coordinating numerous distributed energy resources (DERs) to achieve grid stability, economic efficiency, and carbon reduction goals. Traditional centralized control approaches struggle to scale with the growing number of controllable assets, while purely decentralized methods fail to capture the coordination benefits essential for demand response and peak shaving applications. Multi-Agent Reinforcement Learning (MARL) offers a promising paradigm for DER coordination, yet existing training frameworks exhibit inherent limitations: Decentralized Training with Decentralized Execution (DTDE) suffers from environment non-stationarity and lack of inter-agent coordination, while Centralized Training with Decentralized Execution (CTDE) encounters scalability bottlenecks and communication constraints as agent populations grow. To address this scalability-coordination dilemma, we innovatively integrate the concept of grouped training into the MADDPG framework, proposing a novel algorithm—HTDE-MADDPG—that enables agents to dynamically form coordination clusters based on local observations while maintaining decentralized execution. The proposed algorithm features an adaptive grouping module employing Graph Attention Networks (GAT) for information aggregation and Gumbel-Sigmoid sampling for differentiable group formation. A unified reward function is designed with three components: local cost minimization aligned with time-of-use pricing, district-level peak demand contribution with adaptive thresholds, and ramping penalties to improve power quality. We evaluate the proposed HTDE-MADDPG against baseline (no control), DTDE-MADDPG, CTDE-MADDPG, and Model Predictive Control (MPC) bounds in the CityLearn microgrid simulation environment. Experimental results on a real-world microgrid over a 60-day horizon demonstrate that HTDE-MADDPG achieves 46.6% cost reduction, 37.0% peak demand reduction, 38.7% carbon emission reduction, and 22.3% load ramping  reduction compared to the baseline—consistently outperforming both DTDE (41.7%, 28.3%, 32.3%, 7.0%) and CTDE counterparts across all metrics. Notably, the proposed algorithm exhibits faster convergence and more stable training dynamics than DTDE-MADDPG, while avoiding the communication overhead of CTDE approaches. The adaptive grouping mechanism effectively bridges the gap between scalability and coordination of MARL, offering a practical solution for large-scale DER management in future smart grids
 
@@ -58,7 +60,7 @@ The rapid proliferation of distributed photovoltaic (PV) systems and the declini
 
 ## Professional Experience
 
-### **Huatai Securities Co., Ltd.** | *TMT & Electronics Group*
+### **Huatai Securities Co., Ltd.** | *TMT Group*
 
 *Equity Research Intern, Oct 2022 – Feb 2023*
 
@@ -67,28 +69,29 @@ The rapid proliferation of distributed photovoltaic (PV) systems and the declini
 
 ### **Soochow Securities** | *Real Estate & Construction Group (New Fortune Top-Ranked Team)*
 
-*Equity Research Intern, Jun 2022 – Sep 2022*
+*Equity Research Intern, Apr 2022 – Aug 2022*
 
 * **Market Analysis:** Analyzed investment logic for **315 listed companies** by evaluating competitive landscapes, supply/demand dynamics, and inventory turnover amidst real estate credit volatility. Closely monitored policy easing and commodity prices (cement, glass).
 * **Financial Modeling:** Maintained proprietary databases using  **Wind** ; updated high-frequency data including government bonds, construction contracts, and energy spreads. Assisted in building valuation/earnings models and published  **20+ weekly/monthly analysis reports** .
 * **Thematic Research:** Conducted **equity penetration analysis** on land-acquiring firms to assess financial exposure. Performed sensitivity analysis on land prices and calculated comprehensive financing costs for **114 developers** (e.g., Poly Development, 600048.SH).
 * **Coverage Initiation:** Expanded team coverage to the home appliance sector; authored a **10,000-word initiation report** on the integrated stove leader  **Yitian Smart (300911.SZ)** .
 
-### **AECOM** | *Global Delivery Center / Infrastructure*
+### **Meritco Services** | *Hard Tech Practice*
 
-Assistant Engineer (Full-time), *Mar 2020 – Mar 2023*
+Part-Time Assistant (PTA) | Jun 2018 – Sep 2018
+
+* **Due Diligence:** Assisted PE/VC clients with investment consulting in frontier tech sectors, including  **EV batteries, AI chips, and Cloud Data Centers** . Designed quantitative research methodologies and customized interview outlines for  **10+ industry experts** .
+* **Data Analysis:** Synthesized **80+ hours** of expert interview transcripts. Conducted data cleaning and utilized **Porter’s Five Forces** and **SWOT analysis** to deliver  **5 comprehensive investment reports** .
+
+
+###  **AECOM** | *Global Delivery Center / Infrastructure*
+
+Assistant Engineer (Full-time), *Jan 2021 – Jan 2022*
 
 * **Investment Consulting:** Focused on **TOD (Transit-Oriented Development)** and  **PPP models** . Designed profit models and strategic plans to assist government bodies and MTR Corp in establishing **"Rail + Property"** value capture mechanisms.
 * **Sustainable Design:** Managed smart infrastructure projects (architecture/transportation). Provided **LEED** and  **ESG consulting** , conducting lifecycle energy consumption and carbon footprint analysis.
 * **Digital Transformation:** Leveraged **BIM, Big Data, and Cloud Computing** to enhance project visualization and information management. Managed costs and cash flows to ensure project **IRR** and net profit margins reached  **10-20%** .
 * **Key Projects:** Awarded **"Most Valuable Player"** for the **Sydney Gateway** project. Participated in the **New Zealand City Rail Link** and **Singapore Mandai Safari Park** projects.
-
-### **Meritco Services** | *Hard Tech Practice*
-
-***Part-Time Assistant (PTA)** | Jun 2018 – Sep 2018*
-
-* **Due Diligence:** Assisted PE/VC clients with investment consulting in frontier tech sectors, including  **EV batteries, AI chips, and Cloud Data Centers** . Designed quantitative research methodologies and customized interview outlines for  **10+ industry experts** .
-* **Data Analysis:** Synthesized **80+ hours** of expert interview transcripts. Conducted data cleaning and utilized **Porter’s Five Forces** and **SWOT analysis** to deliver  **5 comprehensive investment reports** .
 
 ## Patents & Awards
 

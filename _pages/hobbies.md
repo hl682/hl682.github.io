@@ -3,10 +3,19 @@ permalink: /hobbies/
 title: "Hobbies"
 author_profile: true
 ---
+## Fashion Model
 
-## Beyond Research 🎯
+我是在剑桥大学CUCFS担任T台模特和摄影师，（放照片）
 
-When I'm not training reinforcement learning agents or optimizing energy systems, you can find me...
+
+
+在LMBC M3， 担任Rower，（放照片）
+
+
+
+我在新筑交响乐团担任团长兼第二小提琴首席（放照片）
+
+
 
 ---
 
@@ -20,28 +29,6 @@ I served as the **President of the Symphony Orchestra** at Southwest Jiaotong Un
 
 - **ASCE Student Chapter President** - Led the American Society of Civil Engineers student chapter
 - Organized and participated in international engineering competitions
-
----
-
-### 🏗️ Engineering Competitions
-
-I've always enjoyed the hands-on challenge of engineering competitions:
-
-- 🛶 **ASCE Concrete Canoe Competition** - 6th Place, Mid-Pacific Conference (2018)
-- 🌉 **ASCE Steel Bridge Competition** - 4th Place, Southeast Conference (2017)
-
-These experiences taught me teamwork, creative problem-solving, and how to work under pressure.
-
----
-
-### 📚 Continuous Learning
-
-I'm always curious about:
-- 🤖 AI and Machine Learning advances
-- ♟️ Strategy games
-- 🌱 Sustainable technology innovations
-
----
 
 ### 📍 Places I've Worked & Lived
 
