@@ -1,23 +1,46 @@
 {% include base_path %}
+
+{% comment %} Determine the active language and pick the matching navigation. {% endcomment %}
+{% assign cur_lang = page.lang | default: 'en' %}
+{% if cur_lang == 'zh' %}
+  {% assign nav_links = site.data.navigation.main_zh %}
+  {% assign home_url = '/zh/' %}
+  {% assign lang_toggle_url = page.translation_url | default: '/' %}
+  {% assign lang_toggle_label = 'EN' %}
+  {% assign cv_label = '简历' %}
+{% else %}
+  {% assign nav_links = site.data.navigation.main %}
+  {% assign home_url = '/' %}
+  {% assign lang_toggle_url = page.translation_url | default: '/zh/' %}
+  {% assign lang_toggle_label = '中文' %}
+  {% assign cv_label = 'CV' %}
+{% endif %}
+
 <div class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
         <button><span class="navicon"></span></button>
         <ul class="visible-links">
-          <li class="masthead__menu-item masthead__menu-item--lg persist {% if page.url == '/' or page.url == '/index.html' %}selected{% endif %}">
-            <a href="{{ base_path }}/">{{ site.title }}</a>
+          <li class="masthead__menu-item masthead__menu-item--lg persist {% if page.url == home_url %}selected{% endif %}">
+            <a href="{{ base_path }}{{ home_url }}">{{ site.title }}</a>
           </li>
-          {% for link in site.data.navigation.main %}
+          {% for link in nav_links %}
             {% if link.url contains 'http' %}
               {% assign domain = '' %}
             {% else %}
               {% assign domain = base_path %}
             {% endif %}
-            <li class="masthead__menu-item {% if page.url contains link.url and link.url != '/' %}selected{% endif %}">
+            <li class="masthead__menu-item {% if page.url == link.url %}selected{% endif %}">
               <a href="{{ domain }}{{ link.url }}">{{ link.title }}</a>
             </li>
           {% endfor %}
+          <li class="masthead__menu-item persist">
+            <a href="{{ base_path }}/files/CV.pdf" download><i class="fas fa-fw fa-file-arrow-down" aria-hidden="true"></i> {{ cv_label }}</a>
+          </li>
+          <li class="masthead__menu-item persist">
+            <a href="{{ base_path }}{{ lang_toggle_url }}" title="Switch language / 切换语言"><i class="fas fa-fw fa-language" aria-hidden="true"></i> {{ lang_toggle_label }}</a>
+          </li>
           <li id="theme-toggle" class="masthead__menu-item persist tail">
             <a role="button" aria-labelledby="theme-icon"><i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true" title="toggle theme"></i></a>
           </li>
