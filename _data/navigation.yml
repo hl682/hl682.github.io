@@ -4,16 +4,20 @@
 main:
   - title: "About Me"
     url: /
-  - title: "Research Experience"
-    url: /research/
-  - title: "Professional Experience"
-    url: /professional/
+  - title: "Academic"
+    url: /academic/
+  - title: "Career"
+    url: /career/
+  - title: "Hobbies"
+    url: /hobbies/
 
 # Chinese navigation (中文导航)
 main_zh:
   - title: "关于我"
     url: /zh/
-  - title: "科研"
-    url: /zh/research/
-  - title: "工作"
-    url: /zh/professional/
+  - title: "学术"
+    url: /zh/academic/
+  - title: "职业"
+    url: /zh/career/
+  - title: "兴趣爱好"
+    url: /zh/hobbies/

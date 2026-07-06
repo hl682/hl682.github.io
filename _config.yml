@@ -25,10 +25,14 @@ author:
   # Biographic information
   avatar           : "haomin's profile.jpg"
   name             : "Haomin LUO"
+  name_zh          : "罗昊旻"
   pronouns         : "She/Her/Hers"
   bio              : "PhD in Engineering"
-  location         : "Cambridge, UK"
+  bio_zh           : "工程博士生"
+  location         : "Cambridge, UK · Shanghai, China"
+  location_zh      : "英国剑桥郡 · 中国上海"
   employer         : "University of Cambridge"
+  employer_zh      : "剑桥大学"
   uri              : # URL
   email            : "hl682@cam.ac.uk" 
 
@@ -66,7 +70,8 @@ author:
   keybase          : # Username
   instagram        : "haomin_1896" # Username
   lastfm           : # Username
-  linkedin         : "https://www.linkedin.com/in/haomin-luo-40856714b/" # Username
+  linkedin         : "https://www.linkedin.com/in/haomin-luo-40856714b/" # Username or full profile URL
+  xiaohongshu      : "https://www.xiaohongshu.com/" # RedNote / 小红书 - replace with your full profile URL
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username

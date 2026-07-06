@@ -8,12 +8,14 @@
   {% assign lang_toggle_url = page.translation_url | default: '/' %}
   {% assign lang_toggle_label = 'EN' %}
   {% assign cv_label = '简历' %}
+  {% assign cv_url = '/files/CV_ZH.pdf' %}
 {% else %}
   {% assign nav_links = site.data.navigation.main %}
   {% assign home_url = '/' %}
   {% assign lang_toggle_url = page.translation_url | default: '/zh/' %}
   {% assign lang_toggle_label = '中文' %}
   {% assign cv_label = 'CV' %}
+  {% assign cv_url = '/files/CV_EN.pdf' %}
 {% endif %}
 
 <div class="masthead">
@@ -36,7 +38,7 @@
             </li>
           {% endfor %}
           <li class="masthead__menu-item persist">
-            <a href="{{ base_path }}/files/CV.pdf" download><i class="fas fa-fw fa-file-arrow-down" aria-hidden="true"></i> {{ cv_label }}</a>
+            <a href="{{ base_path }}{{ cv_url }}" download><i class="fas fa-fw fa-file-arrow-down" aria-hidden="true"></i> {{ cv_label }}</a>
           </li>
           <li class="masthead__menu-item persist">
             <a href="{{ base_path }}{{ lang_toggle_url }}" title="Switch language / 切换语言"><i class="fas fa-fw fa-language" aria-hidden="true"></i> {{ lang_toggle_label }}</a>

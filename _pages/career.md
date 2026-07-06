@@ -1,9 +1,9 @@
 ---
-permalink: /professional/
-title: "Professional Experience"
+permalink: /career/
+title: "Career"
 author_profile: true
 lang: en
-translation_url: /zh/professional/
+translation_url: /zh/career/
 ---
 
 ### **Huatai Securities Co., Ltd.** | *TMT Group*

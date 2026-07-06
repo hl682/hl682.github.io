@@ -1,10 +1,15 @@
 ---
-permalink: /zh/research/
-title: "科研"
+permalink: /zh/academic/
+title: "学术"
 author_profile: true
 lang: zh
-translation_url: /research/
+translation_url: /academic/
 ---
+## 引言
+
+我的研究聚焦于**深度强化学习（RL）**，尤其是**多智能体强化学习（MARL）**。我主要研究智能体之间的通信机制、协作结构以及整体的可解释性。我早期的工作主要将强化学习作为一种数据驱动、无模型的时间序列控制范式，应用于电力系统中的需求响应调度，涵盖微电网、虚拟电厂（VPP）以及光伏—储能系统。如今，我的研究兴趣更多地转向强化学习在能源金融领域的应用，特别是电力市场中的量化交易。
+
+## 科研经历
 
 ### 将自适应分组机制融入 MADDPG 以实现智能微电网中分布式储能的协同调度
 
@@ -43,3 +48,15 @@ translation_url: /research/
 * 致力于在降低运营成本的同时提升机场航站楼的环境可持续性。在项目设计与施工的全过程中，负责评估 T1 航站楼（1.26 平方公里）的整体能耗与碳足迹，并提供可再生能源可行性方案
 * 对场地进行微气候分析并使用 EnergyPlus 分析能耗；通过建筑立面眩光分析、室内热舒适度分析与室内光环境分析，使用 Ecotect、Fuzor 与 SketchUp 模拟建筑布局、通风、光照强度并计算其最佳朝向
 * 该项目荣获第 5 届国际 BIM 大奖（由 BSHK 主办）及 2020 年 Bentley 竞赛卓越奖
+
+## Patents & Awards
+
+* Haomin, LUO., A UVC Purifier for Improving IAQ in Building Environment. Patent Application Number: ZL 2013 3 0320199.2
+* Haomin, LUO., Indoor Air Purification Device. Patent Application Number: ZL 2013 2 0094064.3 (Authorized)
+* 03/2024 MSc Excellent Student Scholarship (Top 5%)
+* 11/2023 2nd Place in the 2023 NeurIPS CityLearn Challenge (Top 2)
+* 05/2021 Most Valued Player in Sydney Gateway Project of AECOM (Top 1)
+* 12/2018 Mingcheng Scholarship of Southwest Jiaotong University (Top 10%)
+* 06/2018 2017-2018 Outstanding Individual of Southwest Jiaotong University (Top 5%)
+* 04/2018 6th Place in 2018 ASCE Mid-Pacific Student Conference Concrete Canoe Competition (International Award)
+* 03/2017 4th Place in the 2017 ASCE Southeast Student Conference Steel Bridge Competition (International Award)

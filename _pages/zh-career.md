@@ -1,9 +1,9 @@
 ---
-permalink: /zh/professional/
-title: "工作"
+permalink: /zh/career/
+title: "职业"
 author_profile: true
 lang: zh
-translation_url: /professional/
+translation_url: /career/
 ---
 
 ### **华泰证券股份有限公司** | *TMT 组*
@@ -22,7 +22,7 @@ translation_url: /professional/
 * **专题研究：** 对拿地企业进行 **股权穿透分析** 以评估财务敞口。对土地价格进行敏感性分析，并测算 **114 家房企**（如保利发展，600048.SH）的综合融资成本。
 * **首次覆盖：** 将团队覆盖范围拓展至家电行业；就集成灶龙头 **亿田智能（300911.SZ）** 撰写 **万字首次覆盖报告**。
 
-### **Meritco Services** | *硬科技组*
+### **久谦管理咨询（Meritco Services）** | *硬科技组*
 
 兼职助理（PTA） | 2018 年 6 月 - 2018 年 9 月
 
@@ -30,7 +30,7 @@ translation_url: /professional/
 * **数据分析：** 整合 **80+ 小时** 专家访谈记录。进行数据清洗，并运用 **波特五力模型** 与 **SWOT 分析**，交付 **5 份综合投资报告**。
 
 
-###  **AECOM** | *全球交付中心 / 基础设施*
+###  **AECOM（艾奕康咨询）** | *全球交付中心 / 基础设施*
 
 助理工程师（全职），*2021 年 1 月 - 2022 年 1 月*
 

@@ -2,44 +2,8 @@
 permalink: /hobbies/
 title: "Hobbies"
 author_profile: true
----
-## Fashion Model
-
-我是在剑桥大学CUCFS担任T台模特和摄影师，（放照片）
-
-
-
-在LMBC M3， 担任Rower，（放照片）
-
-
-
-我在新筑交响乐团担任团长兼第二小提琴首席（放照片）
-
-
-
+lang: en
+translation_url: /zh/hobbies/
 ---
 
-### 🎵 Music
-
-I served as the **President of the Symphony Orchestra** at Southwest Jiaotong University. Music has been a lifelong passion that helps me stay creative and balanced.
-
----
-
-### 🌍 Leadership & Community
-
-- **ASCE Student Chapter President** - Led the American Society of Civil Engineers student chapter
-- Organized and participated in international engineering competitions
-
-### 📍 Places I've Worked & Lived
-
-- 🇬🇧 Cambridge, UK
-- 🇭🇰 Hong Kong
-- 🇨🇳 Shenzhen, Chengdu
-- 🇦🇺 Sydney (remotely)
-- 🇸🇬 Singapore (project)
-
----
-
-*Feel free to connect if you share similar interests!*
-
-📧 [hl682@cam.ac.uk](mailto:hl682@cam.ac.uk)
+I am a photographer for the [**Cambridge University Charity Fashion Show (CUCFS)**](https://cucfs.co.uk/). An avid rower, I represent the **[Lady Margaret Boat Club (LMBC)](https://www.ladymargaretboatclub.org/)**—having competed in the Lent/May Bumps and HORR—and serve as Vice President of the [**Cambridge Chinese Rower Network (CCRN)**](https://www.cambridgesu.co.uk/organisation/23438/). I also sit on the Executive Committee for the Entrepreneurship Department of the [**Chinese Students and Scholars Association in Cambridge (CSSA)**](https://cssacam.org/). Additionally, I am a classically trained violinist with 20 years of experience, performing regularly in termly concerts with the [**Central Colleges Orchestra (CCO)**](https://www.cmp.cam.ac.uk/opportunities/entry/central-colleges-orchestra-cco/), [**King's (KCMS)**](https://kcmsofficial.wordpress.com/) and [**Jesus's (JCMS)**](https://jcms.jesus.cam.ac.uk/) College Music Societies.
