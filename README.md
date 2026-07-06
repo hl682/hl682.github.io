@@ -1,96 +1,118 @@
-# Academic Pages
-**Academic Pages is a GitHub Pages template for personal and professional portfolio-oriented websites.**
+# 罗昊旻个人主页 · hl682.github.io
 
-![Academic Pages template example](images/themes/homepage-light.png "Academic Pages template example")
+基于 [Academic Pages](https://academicpages.github.io/)（Jekyll）构建，托管在 GitHub Pages。
+网站地址：<https://hl682.github.io/>
 
-# Getting Started
-
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Click the "Use this template" button in the top right.
-1. On the "New repository" page, enter your public repository name as "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and add your content.
-1. Upload any files (like PDFs, .zip files, etc.) to the `files/` directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.
-1. Check status by going to the repository settings, in the "GitHub pages" section
-1. (Optional) Use the Jupyter notebooks or python scripts in the `markdown_generator` folder to generate markdown files for publications and talks from a TSV file.
-
-See more info at https://academicpages.github.io/
-
-## Running locally
-
-When you are initially working on your website, it is very useful to be able to preview the changes locally before pushing them to GitHub. To work locally you will need to:
-
-1. Clone the repository and made updates as detailed above.
-
-### Using a different IDE
-1. Make sure you have ruby-dev, bundler, and nodejs installed
-    
-    On most Linux distribution and [Windows Subsystem Linux](https://learn.microsoft.com/en-us/windows/wsl/about) the command is:
-    ```bash
-    sudo apt install ruby-dev ruby-bundler nodejs
-    ```
-    If you see error `Unable to locate package ruby-bundler`, `Unable to locate package nodejs `, run the following:
-    ```bash
-    sudo apt update && sudo apt upgrade -y
-    ```
-    then try run `sudo apt install ruby-dev ruby-bundler nodejs` again.
-
-    On MacOS the commands are:
-    ```bash
-    brew install ruby
-    brew install node
-    gem install bundler
-    ```
-1. Run `bundle install` to install ruby dependencies. If you get errors, delete Gemfile.lock and try again.
-
-    If you see file permission error like `Fetching bundler-2.6.3.gem ERROR:  While executing gem (Gem::FilePermissionError) You don't have write permissions for the /var/lib/gems/3.2.0 directory.` or `Bundler::PermissionError: There was an error while trying to write to /usr/local/bin.`
-    Install Gems Locally (Recommended):
-    ```bash
-    bundle config set --local path 'vendor/bundle'
-    ```
-    then try run `bundle install` again. If succeeded, you should see a folder called `vendor` and `.bundle`.
-
-1. Run `jekyll serve -l -H localhost` to generate the HTML and serve it from `localhost:4000` the local server will automatically rebuild and refresh the pages on change to Markdown (*.md) and HTML files, while changes to the core template and configuration (i.e., `_config.yml`) will require stoping and restarting Jekyll.
-    You may also try `bundle exec jekyll serve -l -H localhost` to ensure jekyll to use specific dependencies on your own local machine.
-
-If you are running on Linux it may be necessary to install some additional dependencies prior to being able to run locally: `sudo apt install build-essential gcc make`
-
-## Using Docker
-
-Working from a different OS, or just want to avoid installing dependencies? You can use the provided `Dockerfile` to build a container that will run the site for you if you have [Docker](https://www.docker.com/) installed.
-
-You can build and execute the container by running the following command in the repository:
-
-```bash
-chmod -R 777 .
-docker compose up
-```
-
-You should now be able to access the website from `localhost:4000`.
-
-### Using the DevContainer in VS Code
-
-If you are using [Visual Studio Code](https://code.visualstudio.com/) you can use the [Dev Container](https://code.visualstudio.com/docs/devcontainers/containers) that comes with this Repository. Normally VS Code detects that a development container configuration is available and asks you if you want to use the container. If this doesn't happen you can manually start the container by **F1->DevContainer: Reopen in Container**. This restarts your VS Code in the container and automatically hosts your academic page locally on http://localhost:4000. All changes will be updated live to that page after a few seconds.
-
-# Maintenance
-
-Bug reports and feature requests to the template should be [submitted via GitHub](https://github.com/academicpages/academicpages.github.io/issues/new/choose). For questions concerning how to style the template, please feel free to start a [new discussion on GitHub](https://github.com/academicpages/academicpages.github.io/discussions).
-
-This repository was forked (then detached) by [Stuart Geiger](https://github.com/staeiou) from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/), which is © 2016 Michael Rose and released under the MIT License (see LICENSE.md). It is currently being maintained by [Robert Zupko](https://github.com/rjzupkoii) and additional maintainers would be welcomed.
-
-## Bugfixes and enhancements
-
-If you have bugfixes and enhancements that you would like to submit as a pull request, you will need to [fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) this repository as opposed to using it as a template. This will also allow you to [synchronize your copy](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork) of template to your fork as well.
-
-Unfortunately, one logistical issue with a template theme like Academic Pages that makes it a little tricky to get bug fixes and updates to the core theme. If you use this template and customize it, you will probably get merge conflicts if you attempt to synchronize. If you want to save your various .yml configuration files and markdown files, you can delete the repository and fork it again. Or you can manually patch.
+本仓库已精简，只保留主页实际用到的内容和运行必需的主题引擎。下面这份说明告诉你**改哪里、怎么改、怎么发布**。
 
 ---
-<div align="center">
-    
-![pages-build-deployment](https://github.com/academicpages/academicpages.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)
-[![GitHub contributors](https://img.shields.io/github/contributors/academicpages/academicpages.github.io.svg)](https://github.com/academicpages/academicpages.github.io/graphs/contributors)
-[![GitHub release](https://img.shields.io/github/v/release/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io/releases/latest)
-[![GitHub license](https://img.shields.io/github/license/academicpages/academicpages.github.io?color=blue)](https://github.com/academicpages/academicpages.github.io/blob/master/LICENSE)
 
-[![GitHub stars](https://img.shields.io/github/stars/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io)
-[![GitHub forks](https://img.shields.io/github/forks/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io/fork)
-</div>
+## 一、目录结构：哪些能改，哪些别动
+
+### ✅ 你平时要编辑的（内容）
+
+| 路径 | 作用 |
+|------|------|
+| `_pages/about.md` | 主页「About Me」（英文） |
+| `_pages/academic.md` | 「Academic」学术（英文） |
+| `_pages/career.md` | 「Career」职业（英文） |
+| `_pages/hobbies.md` | 「Hobbies」兴趣爱好（英文） |
+| `_pages/zh-about.md` | 主页「关于我」（中文） |
+| `_pages/zh-academic.md` | 「学术」（中文） |
+| `_pages/zh-career.md` | 「职业」（中文） |
+| `_pages/zh-hobbies.md` | 「兴趣爱好」（中文） |
+| `_config.yml` → `author:` | 侧边栏：头像、姓名、地点、邮箱、社交链接（含中英文） |
+| `_data/navigation.yml` | 顶部导航栏的菜单文字与链接 |
+| `images/` | 所有图片（头像、照片等） |
+| `files/` | 可下载文件（简历 PDF 等） |
+
+> 英文页和中文页是**两个独立文件**，改完一个不会自动同步到另一个，需要各改一次。
+
+### ⚙️ 主题引擎（网站运行必需，**请勿删除**，一般也不用改）
+
+`_layouts/`（页面模板）、`_includes/`（页面片段，如侧边栏、导航）、`_sass/`（样式源码）、`assets/`（编译后的 CSS/JS/字体）、`Gemfile`。
+
+这些文件虽然你不会去编辑，但删掉网站就无法生成。需要调整外观时再动 `_includes/` 或 `_sass/`。
+
+---
+
+## 二、Markdown 写法速查
+
+```markdown
+## 二级标题          # 页面里的小节标题，如 News
+### 三级标题          # 更小的标题
+
+**加粗文字**
+
+[显示的文字](https://网址)                 链接
+[邮箱](mailto:hl682@cam.ac.uk)             邮箱链接
+**[加粗的链接](https://网址)**             加粗 + 链接
+
+- 列表第一项
+- 列表第二项
+```
+
+段落之间要空一行。
+
+---
+
+## 三、怎么插入图片
+
+1. 把图片放进 `images/` 文件夹（文件名用英文，避免空格，例如 `runway-2026.jpg`）。个人照片建议放 `images/about/`。
+2. 在 Markdown 里引用：
+
+```markdown
+![图片说明](/images/runway-2026.jpg)
+```
+
+3. 想控制大小或并排，用 HTML：
+
+```markdown
+<img src="/images/runway-2026.jpg" alt="走秀照片" width="400">
+```
+
+> 路径都以 `/images/` 开头。目前 `images/about/` 里已存放了 3 张你上传的照片，可直接引用。
+
+---
+
+## 四、怎么发布（两种方式，任选其一）
+
+### 方式 A：GitHub 网页直接改（最简单）
+
+1. 打开 <https://github.com/hl682/hl682.github.io> 并登录。
+2. 进入要改的文件（如 `_pages/about.md`），点右上角铅笔图标 ✏️。
+3. 编辑正文（`---` 之间的头部配置一般不要动）。
+4. 底部点 **Commit changes** 保存。
+5. 等 1–3 分钟，刷新 <https://hl682.github.io/> 查看（必要时按 Ctrl+F5）。
+
+### 方式 B：本地用 Cursor / 命令行改
+
+```powershell
+cd C:\Users\hl682\Projects\hl682.github.io
+# （用编辑器改文件并保存后）
+git pull            # 先拉取，避免冲突
+git add .
+git commit -m "更新主页内容"
+git push
+```
+
+推送到 `master` 分支后，GitHub Pages 会**自动重新构建**，无需手动上传网站。
+
+---
+
+## 五、常见任务
+
+- **加一条 News / 近况**：编辑 `_pages/about.md` 的 `## News`（中文在 `_pages/zh-about.md` 的 `## 近况`），把最新的一条写在最上面。
+- **改侧边栏信息**：编辑 `_config.yml` 的 `author:` 段（`name`/`name_zh`、`location`/`location_zh`、`email`、`linkedin`、`instagram`、`xiaohongshu` 等）。
+- **换头像**：把新图放进 `images/`，再改 `_config.yml` 里的 `avatar:` 文件名。
+- **改导航菜单文字**：编辑 `_data/navigation.yml`（`main:` 英文，`main_zh:` 中文）。
+- **换简历 PDF**：把文件放到 `files/`，命名为 `CV_EN.pdf`（英文界面下载）和 `CV_ZH.pdf`（中文界面下载）。
+
+---
+
+## 六、语言切换说明
+
+- 顶部「中文 / EN」按钮在英文页与对应中文页之间跳转，依靠每个页面头部的 `translation_url` 关联。
+- 侧边栏（姓名、地点、单位、邮箱、领英、小红书等）会随语言自动切换，翻译文案在 `_config.yml` 的 `author:` 里以 `_zh` 结尾的字段配置。
+
+如需较大改动（新增栏目、调整结构），建议先在本地改好、`git push` 后再确认线上效果。
