@@ -1,6 +1,6 @@
 ---
 permalink: /zh/professional/
-title: "职业经历"
+title: "工作"
 author_profile: true
 lang: zh
 translation_url: /professional/

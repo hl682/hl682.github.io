@@ -13,7 +13,7 @@ main:
 main_zh:
   - title: "关于我"
     url: /zh/
-  - title: "科研经历"
+  - title: "科研"
     url: /zh/research/
-  - title: "职业经历"
+  - title: "工作"
     url: /zh/professional/

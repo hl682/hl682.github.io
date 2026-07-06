@@ -18,8 +18,6 @@ Prior to Cambridge, I earned my master degree in Intelligent Building Technology
 
 Beyond academia, I am a profissional fashion model，my mother agency(MA) is **[Lacoco Models Management](https://models.com/agency/lacoco-model-management/)** and a photographer for the [**Cambridge University Charity Fashion Show (CUCFS)**](https://cucfs.co.uk/). An avid rower, I represent the  **[Lady Margaret Boat Club (LMBC)](https://www.ladymargaretboatclub.org/)** —having competed in the Lent/May Bumps and HORR—and serve as Vice President of the [**Cambridge Chinese Rower Network**](https://www.cambridgesu.co.uk/organisation/23438/)(CCRN). I also sit on the Executive Committee for the Entrepreneurship Department of the **[Chinese Students and Scholar Association in Cambridge(CSSA)](https://cssacam.org/)**. Additionally, I am a classically trained violinist with 20 years of experience, performing regularly in termly concerts with the **[Central Colleges Orchestra (CCO](https://www.cmp.cam.ac.uk/opportunities/entry/central-colleges-orchestra-cco/)**, [**King’s (KCMS)**](https://kcmsofficial.wordpress.com/) and **[Jesus’s (JCMS)](https://jcms.jesus.cam.ac.uk/)** College Music Societies.
 
-> Explore more: [**Research Experience**](/research/) · [**Professional Experience**](/professional/)
-
 ## Education
 
 * **PhD in Engineering**, University of Cambridge, Oct 2024 - present
