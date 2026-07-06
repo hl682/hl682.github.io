@@ -11,3 +11,5 @@ end
 
 gem 'github-pages'
 gem 'connection_pool', '2.5.0'
+gem 'wdm', '>= 0.1.0', platforms: [:mingw, :x64_mingw, :mswin]
+gem 'tzinfo-data', platforms: [:mingw, :x64_mingw, :mswin]
