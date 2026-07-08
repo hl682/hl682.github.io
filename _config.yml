@@ -160,9 +160,18 @@ social:
 
 # Analytics
 analytics:
-  provider               :  "false" # false (default), "google", "google-universal", "google-analytics-4", "custom"
+  provider               :  "custom" # false (default), "google", "google-universal", "google-analytics-4", "custom"
   google:
     tracking_id          :
+
+
+# Private visitor tracking (owner-only; sends beacons to a serverless endpoint).
+# See analytics/SETUP.md for how to create the Google Apps Script endpoint.
+visitor_tracking:
+  enabled                : true
+  endpoint               : "https://script.google.com/macros/s/AKfycbzItzXkxUmFlWYL91RoFWNbj99rzvsoP3wXqLDTYua3MYRCwm57zl3xTNl1WKWls0iOSw/exec"                          # <-- paste your Apps Script Web App URL here
+  ip_lookup              : "https://ipapi.co/json/"    # public IP + geolocation lookup
+  token                  : ""                          # optional shared secret (also set in Apps Script)
 
 
 # Reading Files
@@ -173,6 +182,7 @@ include:
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
+  - analytics
   - .asset-cache
   - .bundle
   - .github

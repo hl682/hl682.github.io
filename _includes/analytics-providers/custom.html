@@ -1,3 +1,13 @@
 <!-- start custom analytics snippet -->
-
+{% if site.visitor_tracking.enabled %}
+<script>
+  window.__VT = {
+    enabled: true,
+    endpoint: {{ site.visitor_tracking.endpoint | default: '' | jsonify }},
+    ipLookup: {{ site.visitor_tracking.ip_lookup | default: 'https://ipapi.co/json/' | jsonify }},
+    token: {{ site.visitor_tracking.token | default: '' | jsonify }}
+  };
+</script>
+<script src="{{ '/assets/js/visitor-tracker.js' | relative_url }}" defer></script>
+{% endif %}
 <!-- end custom analytics snippet -->
