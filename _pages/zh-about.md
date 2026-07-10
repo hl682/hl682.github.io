@@ -13,32 +13,16 @@ translation_url: /
 
 简历：[📄 下载简历（PDF）](/files/CV_中文.pdf)
 
-在学术之外，我目前在时尚行业工作，是一名职业模特。我在中国的经纪母公司（MA）为 [Lacoco Models Management](https://models.com/agency/lacoco-model-management/)，工作内容包括商业广告拍摄及走秀。合作事宜请联系我的经纪人[vico.wu@lacocomodels.com](mailto:Vico.wu@lacocomodels.com)。
+在学术之外，我是一名时尚模特。我在中国的经纪母公司（MA）为 [Lacoco Models Management](https://models.com/agency/lacoco-model-management/)，工作内容包括商业广告拍摄及走秀。合作事宜请联系我的经纪人[vico.wu@lacocomodels.com](mailto:Vico.wu@lacocomodels.com)。
 
 模卡：[📄 下载 Snap（PDF）](/images/Snap_Haomin(1).pdf)
 
 ## 最新消息
 
-**2026.03** — 我正式签约了模特经纪公司 **[Lacoco Models Management](https://models.com/agency/lacoco-model-management/)**
-
-<img src="/images/lacoco_signing_2026.png" alt="Signing with Lacoco Models Management in March 2026" style="max-width:50%; border-radius:8px; margin-top:0.5em;">
-
-
-
 **2026.03** — 我为 **[SELFWHO](https://www.instagram.com/selfwhoofficial/?hl=zh-cn)** 拍摄了 2026 春夏成衣系列宣传片
-
-
 
 **2026.03** — 我为 **[SELFWHO](https://www.instagram.com/selfwhoofficial/?hl=zh-cn)** 拍摄了 2026 笑脸系列广告
 
-<img src="/images/selfwho_smiley_2026.png" alt="Signing with Lacoco Models Management in March 2026" style="max-width:50%; border-radius:8px; margin-top:0.5em;">
-
-
-
 2026.02 — 我向工程系和圣约翰学院申请了休学，开启GAP Year
 
-
-
 2026.01 — 我顺利通过了博士一年级答辩，正式注册为了博士候选人
-
-<img src="/images/First year assessment.png" alt="Signing with Lacoco Models Management in March 2026" style="max-width:50%; border-radius:8px; margin-top:0.5em;">

@@ -16,15 +16,11 @@ My professional background spans both engineering and finance: I worked as an as
 
 CV: [📄 Download CV (PDF)](/files/CV_中文.pdf)
 
-Beyond academia, I currently work in the fashion industry as a professional model. My mother agency (MA) in China is **[Lacoco Models Management](https://models.com/agency/lacoco-model-management/)**, and my work includes commercial campaign shoots and runway shows. For collaborations, please contact my agent at [Vico.wu@lacocomodels.com](mailto:Vico.wu@lacocomodels.com).
+Beyond academia, I am a high fashion model. My mother agency (MA) in China is **[Lacoco Models Management](https://models.com/agency/lacoco-model-management/)**, and my work includes commercial campaign shoots and runway shows. For collaborations, please contact my agent at [Vico.wu@lacocomodels.com](mailto:Vico.wu@lacocomodels.com).
 
 Snap: [📄 Download Snap (PDF)](/images/Snap_Haomin(1).pdf)
 
 ## Latest News
-
-**Mar 2026** — I officially signed with the modeling agency **[Lacoco Models Management](https://models.com/agency/lacoco-model-management/)**
-
-<img src="/images/lacoco_signing_2026.png" alt="Signing with Lacoco Models Management in March 2026" style="max-width:50%; border-radius:8px; margin-top:0.5em;">
 
 **Mar 2026** — I shot the SS2026 ready-to-wear collection campaign film for **[SELFWHO](https://www.instagram.com/selfwhoofficial/?hl=zh-cn)**
 
