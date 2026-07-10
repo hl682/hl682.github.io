@@ -16,6 +16,8 @@ My professional background spans both engineering and finance: I worked as an as
 
 CV: [📄 Download CV (PDF)](/files/CV_EN.pdf)
 
+Cover letter: [📄 Download Cover Letter (PDF)](/files/Cover_letter.pdf)
+
 Beyond academia, I am a high fashion model. My mother agency (MA) in China is **[Lacoco Models Management](https://models.com/agency/lacoco-model-management/)**, and my work includes commercial campaign shoots and runway shows. For collaborations, please contact my agent at [Vico.wu@lacocomodels.com](mailto:Vico.wu@lacocomodels.com).
 
 Snap: [📄 Download Snap (PDF)](/images/Snap_Haomin(1).pdf)
