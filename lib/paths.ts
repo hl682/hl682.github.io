@@ -2,6 +2,8 @@ import type { Lang } from "./types";
 
 export const rooms: { href: string; en: string; zh: string }[] = [
   { href: "/", en: "Index", zh: "首页" },
+  { href: "/academic", en: "Academic", zh: "学术" },
+  { href: "/model", en: "Model", zh: "模特" },
   { href: "/research", en: "Research", zh: "研究" },
   { href: "/papers", en: "Papers", zh: "论文" },
   { href: "/lab-notes", en: "Lab notes", zh: "实验笔记" },

@@ -1,4 +1,4 @@
-import type { LabNote, LensPhoto, Paper, ReadingPiece, RunwayItem, VideoPiece } from "./types";
+import type { LabNote, LensPhoto, ModelCard, Paper, ReadingPiece, RunwayItem, VideoPiece } from "./types";
 
 export const seedPapers: Paper[] = [
   {
@@ -12,6 +12,8 @@ export const seedPapers: Paper[] = [
       "Many batteries, one street. If each battery thinks only of its own bill, the street still surges. If one office steers them all, the office becomes the bottleneck. The work is a middle room: agents gather into small groups when the situation asks for it, share what the group needs, and then execute on their own. The groups are not assigned by hand. They are learned.",
     hero: "/media/htde-maddpg-poster.png",
     figures: ["/media/diagram.svg"],
+    pdfUrl: "/papers/htde-maddpg-plate.pdf",
+    publicationUrl: "",
     measures: [
       { label: "Cost", value: "−46.6%" },
       { label: "Peak", value: "−37.0%" },
@@ -19,7 +21,39 @@ export const seedPapers: Paper[] = [
       { label: "Ramping", value: "−22.3%" },
     ],
   },
+  {
+    slug: "when-the-task-moves",
+    title: "When the task moves",
+    years: "Open",
+    venue: "Not a paper. An empty place on the shelf.",
+    abstract:
+      "No result is claimed in this volume. Meta-learning — learning a way to adapt when the tariff, the weather, or the occupancy changes — is named only as the longer question beside the grouping work.",
+    explainer:
+      "This spine is a placeholder. It is not an unpublished result and not a preprint. Replace it in Studio when a real paper exists, or delete the document.",
+    hero: "/paint/scene-library.png",
+    figures: [],
+    pdfUrl: "/papers/shelf-placeholder.pdf",
+    publicationUrl: "",
+  },
 ];
+
+export const seedModelCard: ModelCard = {
+  name: "Haomin LUO",
+  agency: "Lacoco Models",
+  email: "Vico.wu@lacocomodels.com",
+  city: "Cambridge",
+  note: "Measurements are not on file. Blank fields stay blank until they are entered in Studio. Nothing here is an invented size.",
+  measurements: [
+    { label: "Height", value: "" },
+    { label: "Bust", value: "" },
+    { label: "Waist", value: "" },
+    { label: "Hips", value: "" },
+    { label: "Shoes", value: "" },
+    { label: "Hair", value: "" },
+    { label: "Eyes", value: "" },
+  ],
+  stills: ["/paint/pose-stand.png", "/paint/pose-sit.png", "/paint/pose-turn.png"],
+};
 
 export const seedNotes: LabNote[] = [
   {

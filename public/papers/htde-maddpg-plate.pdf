@@ -1,0 +1,75 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 922 >>
+stream
+BT
+/F1 11 Tf
+54 740 Td
+14 TL
+(PLACEHOLDER PLATE) Tj
+T*
+(This file is not the published paper.) Tj
+T*
+(Upload the real PDF on the Paper document in /studio.) Tj
+T*
+() Tj
+T*
+(Integrating adaptive grouping into MADDPG) Tj
+T*
+(Haomin LUO) Tj
+T*
+(2024-2026  ·  First-year report, intended for arXiv) Tj
+T*
+() Tj
+T*
+(Many batteries, one street. If each battery thinks only) Tj
+T*
+(of its own bill, the street still surges. If one office) Tj
+T*
+(steers them all, the office becomes the bottleneck.) Tj
+T*
+() Tj
+T*
+(The work is a middle room: agents gather into small) Tj
+T*
+(groups when the situation asks for it, share what the) Tj
+T*
+(group needs, and then execute on their own.) Tj
+T*
+() Tj
+T*
+(On a CityLearn microgrid the public account compares) Tj
+T*
+(the method with no control, DTDE, CTDE, and a) Tj
+T*
+(model-predictive bound. Cost -46.6%, peak -37.0%,) Tj
+T*
+(carbon -38.7%, ramping -22.3% versus no control.) Tj
+T*
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Times-Roman >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000001214 00000 n 
+trailer << /Size 6 /Root 1 0 R >>
+startxref
+1286
+%%EOF

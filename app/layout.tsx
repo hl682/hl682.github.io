@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { SmoothScroll } from "@/components/SmoothScroll";
 import "./styles/haomin-fonts.css";
 import "./globals.css";
+import "./styles/journey.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.haominluo.com"),
@@ -10,7 +11,7 @@ export const metadata: Metadata = {
     template: "%s — Haomin LUO",
   },
   description:
-    "PhD candidate in engineering at Cambridge, and a high-fashion model. A catalogue of research, lab notes, runway, and photographs.",
+    "PhD candidate in engineering at Cambridge, and a high-fashion model. A painted court that opens onto a library and a studio.",
   authors: [{ name: "Haomin LUO" }],
 };
 

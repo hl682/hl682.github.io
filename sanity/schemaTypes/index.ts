@@ -54,8 +54,63 @@ export const paper = defineType({
       type: "url",
       description: "YouTube, Vimeo, or a direct .mp4 / .webm link.",
     }),
+    defineField({
+      name: "pdf",
+      title: "PDF",
+      type: "file",
+      options: { accept: "application/pdf" },
+      description: "The file opened in the library. Leave empty until the real PDF exists.",
+    }),
+    defineField({
+      name: "publicationUrl",
+      title: "Publication link",
+      type: "url",
+      description: "arXiv, venue, or DOI. Leave empty if it is not public.",
+    }),
   ],
   preview: { select: { title: "title", subtitle: "years", media: "hero" } },
+});
+
+export const modelCard = defineType({
+  name: "modelCard",
+  title: "Comp card",
+  type: "document",
+  fields: [
+    defineField({ name: "name", title: "Name", type: "string", initialValue: "Haomin LUO" }),
+    defineField({ name: "agency", title: "Agency", type: "string", initialValue: "Lacoco Models" }),
+    defineField({ name: "email", title: "Booking email", type: "string" }),
+    defineField({ name: "city", title: "City", type: "string" }),
+    defineField({
+      name: "note",
+      title: "Note",
+      type: "text",
+      rows: 3,
+      description: "Shown beside the measurements. Do not invent sizes in this note.",
+    }),
+    defineField({
+      name: "measurements",
+      title: "Measurements",
+      type: "array",
+      description: "Leave a value blank if it is unknown. The site prints “Not on file”. Do not guess a number.",
+      of: [
+        defineArrayMember({
+          type: "object",
+          fields: [
+            defineField({ name: "label", title: "Label", type: "string", validation: (r) => r.required() }),
+            defineField({ name: "value", title: "Value", type: "string", description: "Blank if unknown." }),
+          ],
+          preview: { select: { title: "label", subtitle: "value" } },
+        }),
+      ],
+    }),
+    defineField({
+      name: "stills",
+      title: "Comp-card stills",
+      type: "array",
+      of: [defineArrayMember({ type: "image", options: { hotspot: true } })],
+    }),
+  ],
+  preview: { select: { title: "name", subtitle: "agency" } },
 });
 
 export const labNote = defineType({
@@ -171,4 +226,4 @@ export const videoPiece = defineType({
   preview: { select: { title: "title", subtitle: "kind", media: "poster" } },
 });
 
-export const schemaTypes = [paper, labNote, readingPiece, runwayMedia, lensPhoto, videoPiece];
+export const schemaTypes = [paper, labNote, readingPiece, runwayMedia, lensPhoto, videoPiece, modelCard];

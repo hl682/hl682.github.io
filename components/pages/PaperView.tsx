@@ -1,82 +1,68 @@
+import Link from "next/link";
 import { notFound } from "next/navigation";
-import { Disclosure } from "@/components/Disclosure";
-import { Frame } from "@/components/Frame";
-import { Plate } from "@/components/Plate";
-import { Section } from "@/components/Section";
 import { SeedNote } from "@/components/SeedNote";
-import { VideoSlot } from "@/components/VideoSlot";
+import { VoiceButton } from "@/components/VoiceButton";
 import { getPaper } from "@/lib/content";
 import { localize } from "@/lib/paths";
 import type { Lang } from "@/lib/types";
-import Link from "next/link";
 
 export async function PaperView({ lang, slug }: { lang: Lang; slug: string }) {
   const { item, fromSeed } = await getPaper(slug);
   if (!item) notFound();
-  const chapters = [
-    { id: "abstract", index: "01", label: lang === "zh" ? "摘要" : "Abstract" },
-    { id: "explainer", index: "02", label: lang === "zh" ? "解说" : "Explainer" },
-    { id: "plates", index: "03", label: lang === "zh" ? "图版" : "Plates" },
-    { id: "film", index: "04", label: lang === "zh" ? "影像" : "Film" },
-  ];
+  const spoken = `${item.title}. ${item.explainer}`;
+  const publication = item.publicationUrl?.trim();
   return (
-    <Frame lang={lang} chapters={chapters}>
-      <header className="page-head" id="abstract">
-        <p className="kicker ledger">01 — {chapters[0].label}</p>
-        <p className="ledger">
-          <Link className="back" href={localize("/papers", lang)}>
-            {lang === "zh" ? "← 论文" : "← Papers"}
-          </Link>
-        </p>
-        <h1 className="display display-lg">{item.title}</h1>
-        <p className="ledger" style={{ marginTop: "1rem" }}>
-          {item.years}
-          {item.venue ? ` · ${item.venue}` : ""}
-        </p>
-        {lang === "zh" ? <p className="ledger">正文为英文</p> : null}
-        <SeedNote fromSeed={fromSeed} lang={lang} />
-        <div className="prose" style={{ marginTop: "1.5rem" }}>
-          <p>{item.abstract}</p>
-        </div>
+    <main className="reader" id="content">
+      <header className="reader-bar">
+        <Link className="ledger" href={localize("/academic#library", lang)}>
+          {lang === "zh" ? "← 书架" : "← The shelf"}
+        </Link>
+        <p className="ledger">{item.years}</p>
+        <Link className="ledger" href={localize("/papers", lang)}>
+          {lang === "zh" ? "全部论文" : "All papers"}
+        </Link>
       </header>
-      <Section id="explainer" kicker={`02 — ${chapters[1].label}`}>
-        <div className="prose">
-          <p>{item.explainer}</p>
-        </div>
-        {item.measures?.length ? (
-          <Disclosure label={lang === "zh" ? "测得的数字" : "The measured plate"} kicker={lang === "zh" ? "相对无控制" : "Against no control"}>
-            <div className="measures">
-              {item.measures.map((measure) => (
-                <div key={measure.label}>
-                  <span className="ledger">{measure.label}</span>
-                  <strong>{measure.value}</strong>
-                </div>
-              ))}
-            </div>
+      <div className="reader-stage">
+        {item.pdfUrl ? (
+          <iframe className="reader-pdf" src={item.pdfUrl} title={item.title} />
+        ) : (
+          <div className="reader-missing">
+            <p className="ledger">{lang === "zh" ? "没有 PDF" : "No PDF on file"}</p>
             <p>
               {lang === "zh"
-                ? "数字来自已公开的一年级报告页，六十天的 CityLearn 微电网。对照还包括 DTDE、CTDE 与模型预测边界。"
-                : "Figures from the public first-year account, a real microgrid in CityLearn over sixty days. The same account compares DTDE, CTDE, and a model-predictive bound."}
+                ? "在 Studio 的 Paper 文档里上传 PDF。这里不会编造一份论文。"
+                : "Upload a PDF on the Paper document in Studio. This page will not invent one."}
             </p>
-          </Disclosure>
-        ) : null}
-      </Section>
-      <Section id="plates" kicker={`03 — ${chapters[2].label}`}>
-        <Plate src={item.hero} alt="" kicker={lang === "zh" ? "主图版" : "Hero plate"} caption={item.title} wide contain />
-        <div className="stack">
-          {item.figures.map((src, index) => (
-            <Plate key={src} src={src} alt="" kicker={`${lang === "zh" ? "图版" : "Plate"} ${index + 2}`} />
-          ))}
-        </div>
-      </Section>
-      <Section id="film" kicker={`04 — ${chapters[3].label}`} short>
-        <VideoSlot
-          url={item.videoUrl}
-          title={item.title}
-          empty={lang === "zh" ? "影像槽" : "Film slot"}
-          caption={lang === "zh" ? "在 Studio 填入视频 URL。" : "Add a video URL in Studio."}
-        />
-      </Section>
-    </Frame>
+          </div>
+        )}
+        <aside className="reader-notes">
+          <p className="ledger">{item.venue || (lang === "zh" ? "未标明出处" : "No venue on file")}</p>
+          <h1 className="display">{item.title}</h1>
+          <SeedNote fromSeed={fromSeed} lang={lang} />
+          {lang === "zh" ? <p className="ledger">解说为英文</p> : null}
+          <p>{item.explainer}</p>
+          {item.measures?.length ? (
+            <ul className="reader-measures">
+              {item.measures.map((measure) => (
+                <li key={measure.label}>
+                  <span className="ledger">{measure.label}</span>
+                  <strong>{measure.value}</strong>
+                </li>
+              ))}
+            </ul>
+          ) : null}
+          <p className="reader-link">
+            {publication ? (
+              <a href={publication} rel="noreferrer">
+                {lang === "zh" ? "出版链接" : "Publication"}
+              </a>
+            ) : (
+              <span className="ledger">{lang === "zh" ? "尚无公开链接" : "No public link on file"}</span>
+            )}
+          </p>
+          <VoiceButton text={spoken} lang={lang} />
+        </aside>
+      </div>
+    </main>
   );
 }

@@ -10,4 +10,5 @@ export const structure: StructureResolver = (S) =>
       S.listItem().title("Runway").child(S.documentTypeList("runwayMedia").title("Runway")),
       S.listItem().title("Lens").child(S.documentTypeList("lensPhoto").title("Lens")),
       S.listItem().title("Videos").child(S.documentTypeList("videoPiece").title("Videos")),
+      S.listItem().title("Comp card").child(S.documentTypeList("modelCard").title("Comp card")),
     ]);

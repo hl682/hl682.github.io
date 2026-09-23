@@ -1,7 +1,7 @@
 import { cache } from "react";
 import { client, plateUrl, sanityConfigured } from "./sanity";
-import { seedLens, seedNotes, seedPapers, seedReading, seedRunway, seedVideos } from "./seed";
-import type { Bundle, LabNote, LensPhoto, Paper, ReadingPiece, RunwayItem, VideoPiece } from "./types";
+import { seedLens, seedModelCard, seedNotes, seedPapers, seedReading, seedRunway, seedVideos } from "./seed";
+import type { Bundle, LabNote, LensPhoto, ModelCard, Paper, ReadingPiece, RunwayItem, VideoPiece } from "./types";
 
 const fallbackPlates = ["/media/cloister.svg", "/media/quad.svg", "/media/drape.svg", "/media/fog-path.svg", "/media/diagram.svg"];
 
@@ -25,8 +25,9 @@ async function fetchOrSeed<T>(query: string, map: (rows: unknown[]) => T[], seed
 export const getPapers = cache(async (): Promise<Bundle<Paper>> => {
   return fetchOrSeed(
     `*[_type == "paper"] | order(years desc) {
-      title, years, venue, abstract, explainer, videoUrl,
+      title, years, venue, abstract, explainer, videoUrl, publicationUrl,
       "slug": slug.current,
+      "pdfUrl": pdf.asset->url,
       hero, figures
     }`,
     (rows) =>
@@ -39,6 +40,8 @@ export const getPapers = cache(async (): Promise<Bundle<Paper>> => {
           abstract?: string;
           explainer?: string;
           videoUrl?: string;
+          pdfUrl?: string;
+          publicationUrl?: string;
           hero?: { asset?: { _ref?: string } };
           figures?: { asset?: { _ref?: string } }[];
         };
@@ -56,6 +59,8 @@ export const getPapers = cache(async (): Promise<Bundle<Paper>> => {
           hero: plateUrl(paper.hero, plateAt(index)),
           figures,
           videoUrl: paper.videoUrl || undefined,
+          pdfUrl: paper.pdfUrl || undefined,
+          publicationUrl: paper.publicationUrl || undefined,
         };
       }),
     seedPapers,
@@ -235,6 +240,42 @@ export const getVideos = cache(async (): Promise<Bundle<VideoPiece>> => {
       }),
     seedVideos.filter((video) => video.url.length > 0),
   );
+});
+
+export const getModelCard = cache(async (): Promise<{ item: ModelCard; fromSeed: boolean }> => {
+  if (!sanityConfigured || !client) return { item: seedModelCard, fromSeed: true };
+  try {
+    const row = await client.fetch<{
+      name?: string;
+      agency?: string;
+      email?: string;
+      city?: string;
+      note?: string;
+      measurements?: { label?: string; value?: string }[];
+      stills?: { asset?: { _ref?: string } }[];
+    } | null>(`*[_type == "modelCard"] | order(_updatedAt desc)[0]{
+      name, agency, email, city, note, measurements, stills
+    }`);
+    if (!row) return { item: seedModelCard, fromSeed: true };
+    const stills = (row.stills ?? []).map((still) => plateUrl(still, "")).filter(Boolean);
+    const measurements = (row.measurements ?? [])
+      .filter((entry) => entry.label)
+      .map((entry) => ({ label: entry.label ?? "", value: entry.value ?? "" }));
+    return {
+      item: {
+        name: row.name || seedModelCard.name,
+        agency: row.agency || seedModelCard.agency,
+        email: row.email || seedModelCard.email,
+        city: row.city || seedModelCard.city,
+        note: row.note || seedModelCard.note,
+        measurements: measurements.length ? measurements : seedModelCard.measurements,
+        stills: stills.length ? stills : seedModelCard.stills,
+      },
+      fromSeed: false,
+    };
+  } catch {
+    return { item: seedModelCard, fromSeed: true };
+  }
 });
 
 export async function getPaper(slug: string) {

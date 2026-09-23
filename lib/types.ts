@@ -16,7 +16,24 @@ export type Paper = {
   hero: string;
   figures: string[];
   videoUrl?: string;
+  pdfUrl?: string;
+  publicationUrl?: string;
   measures?: { label: string; value: string }[];
+};
+
+export type Measurement = {
+  label: string;
+  value: string;
+};
+
+export type ModelCard = {
+  name: string;
+  agency: string;
+  email: string;
+  city: string;
+  note: string;
+  measurements: Measurement[];
+  stills: string[];
 };
 
 export type LabNote = {
