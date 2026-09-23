@@ -1,4 +1,5 @@
 import { Frame } from "@/components/Frame";
+import { Plate } from "@/components/Plate";
 import { Section } from "@/components/Section";
 import type { Lang } from "@/lib/types";
 
@@ -16,6 +17,14 @@ export function ContactView({ lang }: { lang: Lang }) {
         <p className="quiet" style={{ marginTop: "1rem" }}>
           {lang === "zh" ? "两处地址。都请写得明白。" : "Two addresses. Write plainly to either."}
         </p>
+        <div style={{ maxWidth: "16rem", marginTop: "1.6rem" }}>
+          <Plate
+            src="/media/portrait.jpg"
+            alt={lang === "zh" ? "罗昊旻肖像" : "Portrait of Haomin LUO"}
+            kicker={lang === "zh" ? "肖像" : "Portrait"}
+            caption={lang === "zh" ? "釉色压低后的肖像。" : "The portrait, under a low varnish."}
+          />
+        </div>
       </header>
       <div className="contact-grid">
         <div>

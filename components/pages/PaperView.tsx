@@ -62,7 +62,7 @@ export async function PaperView({ lang, slug }: { lang: Lang; slug: string }) {
         ) : null}
       </Section>
       <Section id="plates" kicker={`03 — ${chapters[2].label}`}>
-        <Plate src={item.hero} alt="" kicker={lang === "zh" ? "主图版" : "Hero plate"} caption={item.title} wide />
+        <Plate src={item.hero} alt="" kicker={lang === "zh" ? "主图版" : "Hero plate"} caption={item.title} wide contain />
         <div className="stack">
           {item.figures.map((src, index) => (
             <Plate key={src} src={src} alt="" kicker={`${lang === "zh" ? "图版" : "Plate"} ${index + 2}`} />

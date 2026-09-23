@@ -4,12 +4,14 @@ type Props = {
   kicker?: string;
   caption?: string;
   wide?: boolean;
+  contain?: boolean;
   empty?: string;
 };
 
-export function Plate({ src, alt = "", kicker, caption, wide, empty }: Props) {
+export function Plate({ src, alt = "", kicker, caption, wide, contain, empty }: Props) {
+  const figureClass = ["plate", wide ? "plate-wide" : "", contain ? "plate-contain" : ""].filter(Boolean).join(" ");
   return (
-    <figure className={wide ? "plate plate-wide" : "plate"}>
+    <figure className={figureClass}>
       <div className="plate-stage">
         <img src={src} alt={alt} />
         {empty ? <span className="ledger slot-label">{empty}</span> : null}

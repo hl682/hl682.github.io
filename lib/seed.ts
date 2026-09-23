@@ -10,8 +10,8 @@ export const seedPapers: Paper[] = [
       "Distributed batteries and rooftop solar are changing the street-level grid. A single controller does not scale; agents that never speak to one another still peak together. HTDE-MADDPG lets storage agents form coordination clusters from local observations, then act apart. Grouping uses a graph attention network and a differentiable Gumbel-Sigmoid sample. The reward watches the tariff, the district peak, and needless ramping. On a CityLearn microgrid the method is compared with no control, DTDE-MADDPG, CTDE-MADDPG, and a model-predictive bound.",
     explainer:
       "Many batteries, one street. If each battery thinks only of its own bill, the street still surges. If one office steers them all, the office becomes the bottleneck. The work is a middle room: agents gather into small groups when the situation asks for it, share what the group needs, and then execute on their own. The groups are not assigned by hand. They are learned.",
-    hero: "/media/diagram.svg",
-    figures: ["/media/quad.svg"],
+    hero: "/media/htde-maddpg-poster.png",
+    figures: ["/media/diagram.svg"],
     measures: [
       { label: "Cost", value: "−46.6%" },
       { label: "Peak", value: "−37.0%" },
@@ -101,8 +101,19 @@ export const seedRunway: RunwayItem[] = [
     date: "March 2026",
     kind: "campaign",
     credit: "Advertisement. Mother agency: Lacoco Models.",
-    note: "Replace the cloth study with the campaign still.",
-    stills: ["/media/drape.svg"],
+    note: "The advertisement still, under a varnish. Further frames can replace the cloth study.",
+    stills: ["/media/selfwho-smiley-2026.png", "/media/drape.svg"],
+  },
+  {
+    slug: "lacoco-2026",
+    title: "Signed to the mother agency",
+    house: "Lacoco Models",
+    season: "2026",
+    date: "2026",
+    kind: "still",
+    credit: "Mother agency signing.",
+    note: "A record of the agency, not a campaign frame.",
+    stills: ["/media/lacoco-signing-2026.png"],
   },
 ];
 
