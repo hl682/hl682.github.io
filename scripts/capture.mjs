@@ -32,13 +32,19 @@ async function save(name) {
   console.log(file);
 }
 
+await page.waitForTimeout(1400);
 await save("home-frontispiece.png");
-await scrollTo(page, "#manifesto");
-await save("home-manifesto.png");
-await scrollTo(page, "#doors");
-await save("home-doors.png");
-await scrollTo(page, "#catalogue");
-await save("home-catalogue.png");
+await scrollTo(page, "#research");
+await save("home-research.png");
+await scrollTo(page, "#practice");
+await save("home-practice.png");
+await scrollTo(page, "#runway");
+await save("home-runway.png");
+await page.locator(".story-menu-btn").click();
+await page.waitForTimeout(400);
+await save("home-menu.png");
+await page.keyboard.press("Escape");
+await page.waitForTimeout(300);
 
 await page.goto(`${base}/research`, { waitUntil: "networkidle" });
 await save("research.png");
