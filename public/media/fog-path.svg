@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <defs>
+    <filter id="fog" x="-15%" y="-15%" width="130%" height="130%"><feGaussianBlur stdDeviation="12"/></filter>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#c9c2b4"/>
+      <stop offset="1" stop-color="#8a8478"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="#e4ddd2"/>
+  <polygon points="80,760 1120,760 760,360 440,360" fill="url(#ground)" opacity="0.55"/>
+  <g stroke="#5c4f3a" stroke-width="1" opacity="0.35">
+    <path d="M200 760 L500 390 L540 390 L280 760"/>
+    <path d="M360 760 L560 400 L610 400 L460 760"/>
+    <path d="M540 760 L640 410 L690 410 L660 760"/>
+    <path d="M740 760 L700 420 L760 420 L900 760"/>
+  </g>
+  <g fill="#8a8478" opacity="0.4" filter="url(#fog)">
+    <rect x="860" y="180" width="36" height="200"/>
+    <polygon points="850,184 878,110 906,184"/>
+  </g>
+  <ellipse cx="620" cy="300" rx="360" ry="90" fill="#ebe6dc" opacity="0.85" filter="url(#fog)"/>
+  <ellipse cx="500" cy="240" rx="220" ry="60" fill="#ebe6dc" filter="url(#fog)"/>
+  <rect width="1200" height="800" fill="#c4b59a" opacity="0.08"/>
+</svg>

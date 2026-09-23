@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1200">
+  <defs>
+    <filter id="glaze" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="20"/></filter>
+  </defs>
+  <rect width="900" height="1200" fill="#e7e0d4"/>
+  <ellipse cx="300" cy="430" rx="180" ry="120" fill="#c4b59a" opacity="0.35" filter="url(#glaze)"/>
+  <ellipse cx="620" cy="700" rx="200" ry="130" fill="#4a5c58" opacity="0.16" filter="url(#glaze)"/>
+  <g fill="none" stroke="#5c4f3a" stroke-width="1" opacity="0.55">
+    <path d="M220 360 L300 470 L250 560 L180 480 Z"/>
+    <path d="M520 560 L640 500 L720 640 L600 720 Z"/>
+    <path d="M300 470 L520 560"/>
+    <path d="M250 560 L600 720" opacity="0.4"/>
+  </g>
+  <g fill="#171614">
+    <circle cx="220" cy="360" r="7"/><circle cx="300" cy="470" r="8"/><circle cx="250" cy="560" r="6"/><circle cx="180" cy="480" r="5"/>
+    <circle cx="520" cy="560" r="7"/><circle cx="640" cy="500" r="6"/><circle cx="720" cy="640" r="8"/><circle cx="600" cy="720" r="6"/>
+    <circle cx="430" cy="300" r="4" opacity="0.45"/>
+  </g>
+  <g fill="none" stroke="#8a8478" stroke-width="0.8">
+    <circle cx="250" cy="470" r="120"/>
+    <circle cx="630" cy="620" r="140"/>
+  </g>
+  <rect width="900" height="1200" fill="#c4b59a" opacity="0.06"/>
+</svg>
