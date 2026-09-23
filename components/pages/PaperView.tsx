@@ -23,18 +23,34 @@ export async function PaperView({ lang, slug }: { lang: Lang; slug: string }) {
         </Link>
       </header>
       <div className="reader-stage">
-        {item.pdfUrl ? (
-          <iframe className="reader-pdf" src={item.pdfUrl} title={item.title} />
-        ) : (
-          <div className="reader-missing">
-            <p className="ledger">{lang === "zh" ? "没有 PDF" : "No PDF on file"}</p>
-            <p>
-              {lang === "zh"
-                ? "在 Studio 的 Paper 文档里上传 PDF。这里不会编造一份论文。"
-                : "Upload a PDF on the Paper document in Studio. This page will not invent one."}
-            </p>
+        <article className="folio" aria-label={item.title}>
+          <div className="folio-bar">
+            <span className="ledger">{lang === "zh" ? "文稿" : "Plate"} · 01</span>
+            {item.pdfUrl ? (
+              <a href={item.pdfUrl}>{lang === "zh" ? "打开 PDF 文件" : "Open the PDF file"}</a>
+            ) : (
+              <span className="ledger">{lang === "zh" ? "没有 PDF" : "No PDF on file"}</span>
+            )}
           </div>
-        )}
+          <div className="folio-page">
+            <p className="ledger">
+              {item.pdfUrl
+                ? lang === "zh"
+                  ? "占位文稿。正式 PDF 用上方链接打开，或在 Studio 替换。"
+                  : "Placeholder plate. The file itself is linked above. Replace it in Studio."
+                : lang === "zh"
+                  ? "尚未上传 PDF。"
+                  : "No PDF has been uploaded."}
+            </p>
+            <h2 className="display">{item.title}</h2>
+            <p>{item.abstract}</p>
+            {item.measures?.length ? (
+              <p className="folio-measures">
+                {item.measures.map((measure) => `${measure.label} ${measure.value}`).join("   ·   ")}
+              </p>
+            ) : null}
+          </div>
+        </article>
         <aside className="reader-notes">
           <p className="ledger">{item.venue || (lang === "zh" ? "未标明出处" : "No venue on file")}</p>
           <h1 className="display">{item.title}</h1>

@@ -28,7 +28,9 @@ export function HomeView({ lang }: { lang: Lang }) {
   return (
     <main className="split" id="content">
       <Link className="split-half" href={localize("/academic", lang)} data-side="academic">
-        <img src="/paint/cambridge-academic.png" alt="A painted Cambridge college court in mist, quieter oil." />
+        <span className="split-grade">
+          <img src="/paint/cambridge-academic.png" alt="A painted Cambridge college court in mist, quieter oil." />
+        </span>
         <span className="split-copy">
           <span className="ledger">{lang === "zh" ? "左" : "Left"}</span>
           <span className="display split-title">{t.academic}</span>
@@ -37,7 +39,9 @@ export function HomeView({ lang }: { lang: Lang }) {
         </span>
       </Link>
       <Link className="split-half" href={localize("/model", lang)} data-side="model">
-        <img src="/paint/cambridge-editorial.png" alt="The same Cambridge college court, repainted with sharper editorial light." />
+        <span className="split-grade">
+          <img src="/paint/cambridge-academic.png" alt="The same painted Cambridge college court, with sharper editorial light." />
+        </span>
         <span className="split-copy">
           <span className="ledger">{lang === "zh" ? "右" : "Right"}</span>
           <span className="display split-title">{t.model}</span>
