@@ -7,11 +7,20 @@
   height: 100dvh;
   min-height: 100dvh;
   overflow: hidden;
-  background: #241e16;
+  background: #1c1914;
   color: #f3efe6;
+}
+.split::before {
+  content: "";
+  position: absolute;
+  inset: -24px;
+  z-index: 0;
+  background: url("/paint/home-threshold.png") center / cover no-repeat;
+  filter: blur(26px) brightness(0.55) saturate(0.75);
 }
 .split-half {
   position: relative;
+  z-index: 1;
   flex: 1 1 50%;
   width: 50%;
   min-width: 0;
@@ -24,33 +33,32 @@
 .split-grade {
   position: absolute;
   inset: 0;
+  z-index: 0;
   overflow: hidden;
-}
-.split-half[data-side="academic"] .split-grade {
-  filter: saturate(0.68) contrast(0.9) brightness(1.05);
-}
-.split-half[data-side="model"] .split-grade {
-  filter: saturate(0.86) contrast(1.06) sepia(0.07) brightness(1.02);
 }
 .split-half img {
   position: absolute;
-  top: 0;
-  height: 100%;
+  top: 50%;
   width: 100vw;
+  height: auto;
   max-width: none;
-  object-fit: cover;
-  object-position: center center;
-  transform: scale(1.04);
+  transform: translateY(-50%);
   transition: transform 900ms var(--ease);
 }
 .split-half[data-side="academic"] img { left: 0; }
 .split-half[data-side="model"] img { right: 0; left: auto; }
+@media (min-width: 900px) {
+  .split-half img { transform: translateY(-50%) scale(1.12); }
+}
 .split-half:focus-visible {
   flex: 1.2;
   filter: none;
   z-index: 1;
 }
-.split-half:focus-visible img { transform: scale(1.06); }
+.split-half:focus-visible img { transform: translateY(-50%) scale(1.08); }
+@media (min-width: 900px) {
+  .split-half:focus-visible img { transform: translateY(-50%) scale(1.16); }
+}
 @media (hover: hover) and (pointer: fine) {
   .split:hover .split-half {
     flex: 0.86;
@@ -60,7 +68,10 @@
     flex: 1.2;
     filter: none;
   }
-  .split-half:hover img { transform: scale(1.06); }
+  .split-half:hover img { transform: translateY(-50%) scale(1.08); }
+}
+@media (hover: hover) and (pointer: fine) and (min-width: 900px) {
+  .split-half:hover img { transform: translateY(-50%) scale(1.16); }
 }
 .split-copy {
   position: absolute;

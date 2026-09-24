@@ -29,7 +29,7 @@ export function HomeView({ lang }: { lang: Lang }) {
     <main className="split" id="content">
       <Link className="split-half" href={localize("/academic", lang)} data-side="academic">
         <span className="split-grade">
-          <img src="/paint/cambridge-academic.png" alt="A painted Cambridge college court in mist, quieter oil." />
+          <img src="/paint/home-threshold.png" alt="Left of one painting: a woman in a black academic gown in a misty Cambridge court." />
         </span>
         <span className="split-copy">
           <span className="ledger">{lang === "zh" ? "左" : "Left"}</span>
@@ -40,7 +40,7 @@ export function HomeView({ lang }: { lang: Lang }) {
       </Link>
       <Link className="split-half" href={localize("/model", lang)} data-side="model">
         <span className="split-grade">
-          <img src="/paint/cambridge-academic.png" alt="The same painted Cambridge college court, with sharper editorial light." />
+          <img src="/paint/home-threshold.png" alt="Right of the same painting: a woman in a black suit in a photo studio, beyond a stone arch." />
         </span>
         <span className="split-copy">
           <span className="ledger">{lang === "zh" ? "右" : "Right"}</span>
@@ -51,7 +51,7 @@ export function HomeView({ lang }: { lang: Lang }) {
       </Link>
       <div className="split-mark">
         <p className="display">Haomin LUO</p>
-        <p className="ledger">Cambridge · one court, two hands</p>
+        <p className="ledger">{lang === "zh" ? "一幅画。学院，然后影棚。" : "One painting. College, then the studio."}</p>
       </div>
       <nav className="split-lang" aria-label={lang === "zh" ? "语言" : "Language"}>
         <Link href={withLang(pathname, "en")} data-active={lang === "en"} hrefLang="en">
