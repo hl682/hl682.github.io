@@ -15,7 +15,7 @@
   position: absolute;
   inset: -24px;
   z-index: 0;
-  background: url("/paint/home-threshold.png") center / cover no-repeat;
+  background: url("/paint/home-stage.png") center / cover no-repeat;
   filter: blur(26px) brightness(0.55) saturate(0.75);
 }
 .split-half {
@@ -30,48 +30,91 @@
   text-decoration: none;
   transition: flex 700ms var(--ease), filter 700ms var(--ease);
 }
-.split-grade {
+.split-stage {
   position: absolute;
   inset: 0;
   z-index: 0;
   overflow: hidden;
+  pointer-events: none;
 }
-.split-half img {
+.split-world {
   position: absolute;
+  left: 0;
   top: 50%;
   width: 100vw;
-  height: auto;
-  max-width: none;
+  aspect-ratio: 16 / 9;
   transform: translateY(-50%);
-  transition: transform 900ms var(--ease);
 }
-.split-half[data-side="academic"] img { left: 0; }
-.split-half[data-side="model"] img { right: 0; left: auto; }
+.split-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.split-fog,
+.split-flash {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+.split-fog {
+  background: radial-gradient(ellipse at 28% 45%, rgba(236, 238, 236, 0.05), rgba(176, 184, 186, 0.72) 70%);
+}
+.split-flash {
+  z-index: 4;
+  background: #f7f4ee;
+}
+.split-figure {
+  position: absolute;
+  left: 50%;
+  bottom: max(0px, calc(50% - 30vw));
+  z-index: 4;
+  height: min(72vh, 78vw);
+  pointer-events: none;
+  translate: -50% 0;
+  transition: translate 500ms var(--ease);
+}
 @media (min-width: 900px) {
-  .split-half img { transform: translateY(-50%) scale(1.12); }
+  .split-figure { bottom: 0; height: 78%; }
 }
-.split-half:focus-visible {
-  flex: 1.2;
-  filter: none;
-  z-index: 1;
+.split-figure .fig {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: auto;
+  max-width: none;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 450ms var(--ease);
 }
-.split-half:focus-visible img { transform: translateY(-50%) scale(1.08); }
+.split-figure .fig-neutral { opacity: 1; }
 @media (min-width: 900px) {
-  .split-half:focus-visible img { transform: translateY(-50%) scale(1.16); }
+  .split-world {
+    top: 0;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: auto;
+    transform: none;
+  }
 }
 @media (hover: hover) and (pointer: fine) {
-  .split:hover .split-half {
-    flex: 0.86;
-    filter: saturate(0.78) brightness(0.72);
+  .split:not(.is-playing):hover .split-half::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(12, 10, 8, 0.28);
+    transition: background 500ms var(--ease);
   }
-  .split:hover .split-half:hover {
-    flex: 1.2;
-    filter: none;
-  }
-  .split-half:hover img { transform: translateY(-50%) scale(1.08); }
-}
-@media (hover: hover) and (pointer: fine) and (min-width: 900px) {
-  .split-half:hover img { transform: translateY(-50%) scale(1.16); }
+  .split:not(.is-playing):hover .split-half:hover::after { background: transparent; }
+  .split:not(.is-playing):has([data-side="academic"]:hover) .fig-neutral { opacity: 0; }
+  .split:not(.is-playing):has([data-side="academic"]:hover) .fig-left { opacity: 1; }
+  .split:not(.is-playing):has([data-side="academic"]:hover) .split-figure { translate: calc(-50% - 18px) 0; }
+  .split:not(.is-playing):has([data-side="model"]:hover) .fig-neutral { opacity: 0; }
+  .split:not(.is-playing):has([data-side="model"]:hover) .fig-right { opacity: 1; }
+  .split:not(.is-playing):has([data-side="model"]:hover) .split-figure { translate: calc(-50% + 18px) 0; }
 }
 .split-copy {
   position: absolute;
