@@ -8,6 +8,7 @@ import { localize, withLang } from "@/lib/paths";
 import type { Lang } from "@/lib/types";
 
 const stage = "/paint/home-stage.png";
+const stageTall = "/paint/home-stage-tall.png";
 const frames = {
   neutral: "/paint/figures/figure-neutral.png",
   left: "/paint/figures/figure-glance-left.png",
@@ -43,7 +44,7 @@ export function HomeView({ lang }: { lang: Lang }) {
   const busy = useRef(false);
 
   useEffect(() => {
-    for (const src of [stage, ...Object.values(frames)]) {
+    for (const src of [stage, stageTall, ...Object.values(frames)]) {
       const image = new Image();
       image.src = src;
     }
@@ -100,7 +101,10 @@ export function HomeView({ lang }: { lang: Lang }) {
     <main className="split" id="content" ref={root}>
       <div className="split-stage">
         <div className="split-world" ref={world}>
-          <img className="split-bg" src={stage} alt="" />
+          <picture>
+            <source media="(max-width: 899px)" srcSet={stageTall} />
+            <img className="split-bg" src={stage} alt="" />
+          </picture>
           <div className="split-fog" />
         </div>
         <div className="split-figure" ref={figure}>
