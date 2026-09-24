@@ -3,7 +3,7 @@ import { HomeView } from "@/components/pages/HomeView";
 
 export const metadata: Metadata = {
   title: "罗昊旻",
-  description: "同一幅剑桥学院油画，左右两种笔法。左边走进学术，右边走进影棚。",
+  description: "一幅画：左边是晨雾中的学院与黑袍，石拱门后是影棚与套装。",
 };
 
 export default function Page() {
