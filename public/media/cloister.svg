@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1200">
+  <defs>
+    <filter id="wash" x="-15%" y="-15%" width="130%" height="130%">
+      <feGaussianBlur stdDeviation="14"/>
+    </filter>
+    <filter id="soft" x="-8%" y="-8%" width="116%" height="116%">
+      <feGaussianBlur stdDeviation="2.2"/>
+    </filter>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ebe6dc"/>
+      <stop offset="0.55" stop-color="#d5cec2"/>
+      <stop offset="1" stop-color="#b7b0a4"/>
+    </linearGradient>
+    <linearGradient id="lawn" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4a5c58" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#5c4f3a" stop-opacity="0.2"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="1200" fill="url(#sky)"/>
+  <ellipse cx="460" cy="210" rx="340" ry="150" fill="#ebe6dc" filter="url(#wash)" opacity="0.85"/>
+  <g filter="url(#wash)" opacity="0.45" fill="#8a8478">
+    <rect x="612" y="96" width="38" height="250"/>
+    <polygon points="604,100 631,28 658,100"/>
+    <rect x="622" y="150" width="10" height="22"/>
+    <rect x="636" y="168" width="8" height="18"/>
+  </g>
+  <g fill="#cfc6b6" stroke="#5c4f3a" stroke-width="1.1" opacity="0.92">
+    <path d="M48 1040 V640 Q48 390 230 390 Q412 390 412 640 V1040 Z"/>
+    <path d="M138 1040 V690 Q138 500 250 500 Q362 500 362 690 V1040" fill="#ddd6ca"/>
+    <path d="M210 1040 V730 Q210 590 292 590 Q374 590 374 730 V1040" fill="#e4ddd2"/>
+    <path d="M268 1040 V770 Q268 670 322 670 Q376 670 376 770 V1040" fill="#ebe6dc"/>
+  </g>
+  <g fill="#b7aea0" opacity="0.8">
+    <rect x="70" y="640" width="28" height="400"/>
+    <rect x="360" y="640" width="26" height="400"/>
+    <rect x="150" y="690" width="22" height="350"/>
+    <rect x="328" y="690" width="20" height="350"/>
+    <rect x="214" y="730" width="16" height="310"/>
+    <rect x="348" y="730" width="14" height="310"/>
+  </g>
+  <g stroke="#5c4f3a" stroke-width="0.8" fill="none" opacity="0.45" filter="url(#soft)">
+    <path d="M84 780h250M98 860h220M112 940h190"/>
+  </g>
+  <rect x="430" y="760" width="420" height="280" fill="url(#lawn)"/>
+  <path d="M470 980 C560 900 690 890 860 960 L860 1040 L470 1040 Z" fill="#8a8478" opacity="0.25"/>
+  <ellipse cx="250" cy="180" rx="220" ry="80" fill="#c9c2b4" opacity="0.45" filter="url(#wash)"/>
+  <ellipse cx="640" cy="420" rx="180" ry="90" fill="#4a5c58" opacity="0.12" filter="url(#wash)"/>
+  <rect width="900" height="1200" fill="#c4b59a" opacity="0.08"/>
+  <rect width="900" height="1200" fill="url(#sky)" opacity="0.18"/>
+</svg>

@@ -1,118 +1,136 @@
-# 罗昊旻个人主页 · hl682.github.io
+# 罗昊旻 · Haomin LUO
 
-基于 [Academic Pages](https://academicpages.github.io/)（Jekyll）构建，托管在 GitHub Pages。
-网站地址：<https://hl682.github.io/>
+首页不是整站滚动。一幅画从学院接到影棚，同一个人站在正中的石拱门槛上。点左边，她走进学院并换成黑袍；点右边，她走进影棚、换成套装，最后闪一下。任何宽度都是左右分屏。学术路径按庭院、草坪、回廊、图书馆换景。图书馆的书是论文。模特路径在影棚里换姿势，并给出模卡。尺寸未知时写「未建档」，不编造数字。
 
-本仓库已精简，只保留主页实际用到的内容和运行必需的主题引擎。下面这份说明告诉你**改哪里、怎么改、怎么发布**。
+英文在 `/`，中文在 `/zh`。上传入口是 Sanity Studio：`/studio`。
 
----
+## 本地运行
 
-## 一、目录结构：哪些能改，哪些别动
+需要 Node 20 或更新。
 
-### ✅ 你平时要编辑的（内容）
-
-| 路径 | 作用 |
-|------|------|
-| `_pages/about.md` | 主页「About Me」（英文） |
-| `_pages/academic.md` | 「Academic」学术（英文） |
-| `_pages/career.md` | 「Career」职业（英文） |
-| `_pages/hobbies.md` | 「Hobbies」兴趣爱好（英文） |
-| `_pages/zh-about.md` | 主页「关于我」（中文） |
-| `_pages/zh-academic.md` | 「学术」（中文） |
-| `_pages/zh-career.md` | 「职业」（中文） |
-| `_pages/zh-hobbies.md` | 「兴趣爱好」（中文） |
-| `_config.yml` → `author:` | 侧边栏：头像、姓名、地点、邮箱、社交链接（含中英文） |
-| `_data/navigation.yml` | 顶部导航栏的菜单文字与链接 |
-| `images/` | 所有图片（头像、照片等） |
-| `files/` | 可下载文件（简历 PDF 等） |
-
-> 英文页和中文页是**两个独立文件**，改完一个不会自动同步到另一个，需要各改一次。
-
-### ⚙️ 主题引擎（网站运行必需，**请勿删除**，一般也不用改）
-
-`_layouts/`（页面模板）、`_includes/`（页面片段，如侧边栏、导航）、`_sass/`（样式源码）、`assets/`（编译后的 CSS/JS/字体）、`Gemfile`。
-
-这些文件虽然你不会去编辑，但删掉网站就无法生成。需要调整外观时再动 `_includes/` 或 `_sass/`。
-
----
-
-## 二、Markdown 写法速查
-
-```markdown
-## 二级标题          # 页面里的小节标题，如 News
-### 三级标题          # 更小的标题
-
-**加粗文字**
-
-[显示的文字](https://网址)                 链接
-[邮箱](mailto:hl682@cam.ac.uk)             邮箱链接
-**[加粗的链接](https://网址)**             加粗 + 链接
-
-- 列表第一项
-- 列表第二项
+```bash
+npm install
+cp .env.example .env.local
+npm run dev
 ```
 
-段落之间要空一行。
+打开 <http://localhost:3000>。没有填写 Sanity 环境变量时，网站使用仓库里的占位内容，构建也可以通过。
 
----
-
-## 三、怎么插入图片
-
-1. 把图片放进 `images/` 文件夹（文件名用英文，避免空格，例如 `runway-2026.jpg`）。个人照片建议放 `images/about/`。
-2. 在 Markdown 里引用：
-
-```markdown
-![图片说明](/images/runway-2026.jpg)
+```bash
+npm run build
+npm start
 ```
 
-3. 想控制大小或并排，用 HTML：
+`npm run build` 走 webpack。Next 16 默认的 Turbopack 会把 Sanity 用到的 `swr` 解析成没有默认导出的服务端文件，因此脚本里写了 `next build --webpack`。
 
-```markdown
-<img src="/images/runway-2026.jpg" alt="走秀照片" width="400">
+## 字体
+
+`app/styles/haomin-fonts.css` 注册三个站内族名：
+
+| CSS 族名 | 实际字体 | 用途 |
+| --- | --- | --- |
+| Court Serif / Court Serif Display | Source Serif 4（OFL，未改字库） | 标题。Display 使用光学尺寸轴，大标题设在 `opsz` 60 |
+| Quad Sans | IBM Plex Sans | 正文与界面，以 400 为主 |
+| Ledger Mono | IBM Plex Mono | 只做很小的说明标签，字距拉开 |
+
+字文件在 `app/styles/court-serif`、`quad-sans`、`ledger-mono`。许可证在 `app/styles/licenses`。这些不是 GT Standard，也不是 Flecha。
+
+## 设计
+
+颜色写在 `app/globals.css`：纸 `#ebe6dc`、墨 `#171614`（由 `#1a1916` 略加深）、石 `#8a8478`、雾 `#c9c2b4`、剑桥洗 `#4a5c58`、橡木 `#5c4f3a`，以及很低透明度的暖釉 `#c4b59a`。页面有画布颗粒、暗角和釉色，没有高饱和色。
+
+首页是左右分屏，不是一路滚到底。两半是同一类剑桥学院庭院，只是油画处理不同。点左边进入 `/academic`：黑袍人物按场景前行，最后在图书馆点书。点右边进入 `/model`：套装影棚、换姿势按钮、闪光，以及下面的模卡、尺寸和影像槽。研究、笔记、阅读、秀场、镜头仍是独立内页。
+
+画放在 `public/paint`。人物是画出来的向导，不是照片。论文 PDF 在未上传前用明确标注的占位文件。
+
+## 栏目
+
+| 路径 | 内容 |
+| --- | --- |
+| `/` `/zh` | 左右分屏：学术 / 模特，同一学院两种油画 |
+| `/academic` | 黑袍移步：庭院 → 草坪 → 回廊 → 图书馆 |
+| `/model` | 影棚姿势、闪光、模卡、尺寸、影像 |
+| `/research` | 方向与教育弧：西南交大 → 港科大 → 剑桥圣约翰。无成绩，无实习清单 |
+| `/papers` | 自己的论文：摘要、解说、图版、视频 |
+| `/lab-notes` | 失败的实验，以及为什么失败 |
+| `/reading` | 推荐的别人的论文：解说、信息图、幻灯片、音频 |
+| `/runway` | 时装周 / 广告 / 静帧 |
+| `/lens` | 摄影 |
+| `/contact` | 学术 `hl682@cam.ac.uk`；经纪 `Vico.wu@lacocomodels.com`（Lacoco Models） |
+| `/studio` | Sanity Studio |
+
+在某一栏目于 Studio **发布至少一条**之后，该栏目只显示 Studio 里的内容，仓库占位会让位。发布前请先把需要保留的文字在 Studio 里建好。论文占位是 HTDE-MADDPG（一年级报告中的工作）。实验笔记占位是方法形状上的例子，不是已发生实验的记录，请替换。
+
+## Sanity：如何上传论文、照片、视频
+
+1. 在 <https://www.sanity.io/manage> 新建项目，记下 **Project ID**（8 位）和 dataset（一般是 `production`）。
+2. 复制 `.env.example` 为 `.env.local`：
+
+```
+NEXT_PUBLIC_SANITY_PROJECT_ID=你的项目ID
+NEXT_PUBLIC_SANITY_DATASET=production
+NEXT_PUBLIC_SANITY_API_VERSION=2026-01-01
 ```
 
-> 路径都以 `/images/` 开头。目前 `images/about/` 里已存放了 3 张你上传的照片，可直接引用。
+3. 在 Sanity 项目的 API → CORS 中加入：
+   - `http://localhost:3000`
+   - 正式域名，例如 `https://www.haominluo.com`  
+   允许凭证（credentials），否则 Studio 无法登录。
+4. 部署这些环境变量到托管平台（同名，且 `NEXT_PUBLIC_` 前缀不可省略）。
+5. 打开 `/studio`，用 Sanity 账号登录。左侧有论文、笔记、阅读、秀场、镜头、影片和模卡：
 
----
+| 文档类型 | 上传什么 |
+| --- | --- |
+| Paper | 标题、摘要、解说、主图、图版、视频 URL、PDF 文件、出版链接 |
+| Comp card | 姓名、经纪、预约邮箱、尺寸（未知留空）、模卡静帧 |
+| Lab note | 前提、为何失败、留下了什么、图、视频 URL |
+| Reading room | 为何留下、解说、原文链接、信息图、幻灯片 URL、音频 URL |
+| Runway | 品牌、季节、静帧数组、成片 URL、署名 |
+| Lens | 系列、地点、说明、照片 |
+| Video | 独立影片：URL、海报、归类（paper / runway / lens / note） |
 
-## 四、怎么发布（两种方式，任选其一）
+图片用字段上的上传按钮。视频不进 Sanity 的大文件库：把 YouTube、Vimeo 或直接的 `.mp4` / `.webm` 链接贴进 URL 字段。幻灯片同理，贴 PPT / PDF / Google Slides 的链接。音频贴 `.mp3` 等直链后，阅读页会给出播放器。
 
-### 方式 A：GitHub 网页直接改（最简单）
+本地若已登录 Sanity CLI，也可以：
 
-1. 打开 <https://github.com/hl682/hl682.github.io> 并登录。
-2. 进入要改的文件（如 `_pages/about.md`），点右上角铅笔图标 ✏️。
-3. 编辑正文（`---` 之间的头部配置一般不要动）。
-4. 底部点 **Commit changes** 保存。
-5. 等 1–3 分钟，刷新 <https://hl682.github.io/> 查看（必要时按 Ctrl+F5）。
-
-### 方式 B：本地用 Cursor / 命令行改
-
-```powershell
-cd C:\Users\hl682\Projects\hl682.github.io
-# （用编辑器改文件并保存后）
-git pull            # 先拉取，避免冲突
-git add .
-git commit -m "更新主页内容"
-git push
+```bash
+npx sanity login
+npx sanity dev
 ```
 
-推送到 `master` 分支后，GitHub Pages 会**自动重新构建**，无需手动上传网站。
+日常编辑用网站里的 `/studio` 即可。
 
----
+## 部署与域名 www.haominluo.com
 
-## 五、常见任务
+旧站是 GitHub Pages 上的 Jekyll。Next.js 与 Studio 需要 Node 主机。仓库根目录**故意不放** `CNAME` 文件，避免 GitHub Pages 把 `www.haominluo.com` 指走。域名意图写在 `deploy/CNAME`。
 
-- **加一条 News / 近况**：编辑 `_pages/about.md` 的 `## News`（中文在 `_pages/zh-about.md` 的 `## 近况`），把最新的一条写在最上面。
-- **改侧边栏信息**：编辑 `_config.yml` 的 `author:` 段（`name`/`name_zh`、`location`/`location_zh`、`email`、`linkedin`、`instagram`、`xiaohongshu` 等）。
-- **换头像**：把新图放进 `images/`，再改 `_config.yml` 里的 `avatar:` 文件名。
-- **改导航菜单文字**：编辑 `_data/navigation.yml`（`main:` 英文，`main_zh:` 中文）。
-- **换简历 PDF**：把文件放到 `files/`，命名为 `CV_EN.pdf`（英文界面下载）和 `CV_ZH.pdf`（中文界面下载）。
+合并并切到新主机之后，请在仓库 Settings → Pages 里关掉 GitHub Pages，否则旧构建会和自定义域名抢主机。
 
----
+### Vercel（最直接）
 
-## 六、语言切换说明
+1. 用本仓库新建 Vercel 项目，框架选 Next.js，根目录为仓库根。
+2. 填入上面的 `NEXT_PUBLIC_SANITY_*`。
+3. 添加域名 `www.haominluo.com`。
+4. 在域名的 DNS 增加：
 
-- 顶部「中文 / EN」按钮在英文页与对应中文页之间跳转，依靠每个页面头部的 `translation_url` 关联。
-- 侧边栏（姓名、地点、单位、邮箱、领英、小红书等）会随语言自动切换，翻译文案在 `_config.yml` 的 `author:` 里以 `_zh` 结尾的字段配置。
+```
+www.haominluo.com.   CNAME   cname.vercel-dns.com.
+```
 
-如需较大改动（新增栏目、调整结构），建议先在本地改好、`git push` 后再确认线上效果。
+根域 `@` 可用 `A` 记录 `76.76.21.21`，或把根域 301 到 `www`。以 Vercel 域名面板给出的记录为准。
+
+### Cloudflare
+
+可以用 Cloudflare Pages / Workers 的 OpenNext 适配器（`@opennextjs/cloudflare`，见 Cloudflare 的 Next.js 文档）。DNS 若已在 Cloudflare：
+
+```
+www   CNAME   <你的 pages.dev 或 workers 主机>    （橙云或仅 DNS，按面板要求）
+```
+
+不要同时把 `www` 指到 `hl682.github.io`。
+
+无论哪一家，Sanity CORS 都要包含最终的 `https://www.haominluo.com`。
+
+## 隐私
+
+教育只保留西南交通大学、香港科技大学、剑桥大学圣约翰学院。不写 GPA，不罗列实习与奖学金。联系方式只有学院邮箱与经纪人邮箱，以及已经公开的 Instagram、LinkedIn、小红书。

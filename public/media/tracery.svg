@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1200">
+  <defs>
+    <filter id="ivy" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="18"/></filter>
+  </defs>
+  <rect width="900" height="1200" fill="#e6dfd3"/>
+  <path d="M180 1080 V520 Q180 180 450 180 Q720 180 720 520 V1080 Z" fill="#cfc6b8" stroke="#5c4f3a" stroke-width="2"/>
+  <path d="M250 1040 V560 Q250 280 450 280 Q650 280 650 560 V1040 Z" fill="#ebe6dc" stroke="#5c4f3a" stroke-width="1.2"/>
+  <circle cx="450" cy="430" r="78" fill="#e6dfd3" stroke="#5c4f3a" stroke-width="1.2"/>
+  <path d="M450 352 V508 M372 430 H528" stroke="#5c4f3a" stroke-width="1"/>
+  <path d="M390 390 Q450 360 510 390 Q480 430 510 470 Q450 500 390 470 Q420 430 390 390" fill="none" stroke="#8a8478" stroke-width="1"/>
+  <path d="M450 508 V1040 M250 700 H650 M250 860 H650" stroke="#5c4f3a" stroke-width="1" opacity="0.7"/>
+  <ellipse cx="210" cy="640" rx="90" ry="180" fill="#4a5c58" opacity="0.28" filter="url(#ivy)"/>
+  <ellipse cx="180" cy="820" rx="70" ry="120" fill="#4a5c58" opacity="0.2" filter="url(#ivy)"/>
+  <rect width="900" height="1200" fill="#c4b59a" opacity="0.09"/>
+</svg>
