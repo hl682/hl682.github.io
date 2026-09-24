@@ -3,6 +3,7 @@
 .split {
   position: relative;
   display: flex;
+  flex-flow: row nowrap;
   height: 100dvh;
   min-height: 100dvh;
   overflow: hidden;
@@ -12,7 +13,9 @@
 .split-half {
   position: relative;
   flex: 1 1 50%;
+  width: 50%;
   min-width: 0;
+  height: 100%;
   overflow: hidden;
   color: inherit;
   text-decoration: none;
@@ -31,26 +34,33 @@
 }
 .split-half img {
   position: absolute;
-  inset: 0;
-  width: 100%;
+  top: 0;
   height: 100%;
+  width: 100vw;
+  max-width: none;
   object-fit: cover;
-  object-position: center 42%;
+  object-position: center center;
   transform: scale(1.04);
   transition: transform 900ms var(--ease);
 }
-.split:hover .split-half {
-  flex: 0.86;
-  filter: saturate(0.78) brightness(0.72);
-}
-.split:hover .split-half:hover,
+.split-half[data-side="academic"] img { left: 0; }
+.split-half[data-side="model"] img { right: 0; left: auto; }
 .split-half:focus-visible {
   flex: 1.2;
   filter: none;
+  z-index: 1;
 }
-.split-half:hover img,
-.split-half:focus-visible img {
-  transform: scale(1.08);
+.split-half:focus-visible img { transform: scale(1.06); }
+@media (hover: hover) and (pointer: fine) {
+  .split:hover .split-half {
+    flex: 0.86;
+    filter: saturate(0.78) brightness(0.72);
+  }
+  .split:hover .split-half:hover {
+    flex: 1.2;
+    filter: none;
+  }
+  .split-half:hover img { transform: scale(1.06); }
 }
 .split-copy {
   position: absolute;
@@ -64,9 +74,10 @@
   text-shadow: 0 1px 18px rgba(20, 16, 10, 0.45);
 }
 .split-title {
-  font-size: clamp(3.2rem, 6vw, 6.4rem);
+  font-size: clamp(1.65rem, 5.2vw, 6.4rem);
   line-height: 0.9;
   color: #f7f1e6;
+  white-space: nowrap;
 }
 .split-dek { max-width: 18rem; font-size: 1.05rem; }
 .split-enter { margin-top: 0.4rem; letter-spacing: 0.22em; }
@@ -355,9 +366,28 @@
 .reader-link { margin: 0.4rem 0 0.8rem; }
 .voice .ledger { margin: 0.35rem 0 0; }
 
+@media (max-width: 720px) {
+  .split-copy {
+    left: 0.65rem;
+    right: 0.45rem;
+    bottom: 0.9rem;
+    gap: 0.15rem;
+  }
+  .split-dek { display: none; }
+  .split-mark { top: 0.75rem; max-width: 46vw; }
+  .split-mark .display { font-size: 0.95rem; }
+  .split-mark .ledger { display: none; }
+  .split-lang { top: 0.35rem; right: 0.35rem; }
+  .split-lang a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    padding: 0 0.15rem;
+  }
+  .split-enter { letter-spacing: 0.12em; }
+}
+
 @media (max-width: 900px) {
-  .split { flex-direction: column; }
-  .split:hover .split-half, .split:hover .split-half:hover { flex: 1 1 50%; }
   .shelf {
     left: 0.7rem;
     right: 0.7rem;
